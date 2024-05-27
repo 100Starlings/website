@@ -1,0 +1,39 @@
+{
+  "positions": [
+    {
+      "job_url": "junior-to-mid-level-ruby-developer",
+      "job_title": "Junior/Mid-Level Ruby Developer",
+      "description": "Develop full-stack Ruby on Rails code",
+      "image_url": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=120",
+      "is_active" : false
+    },
+    {
+      "job_url": "react-developer",
+      "job_title": "React\nDeveloper",
+      "description": "Develop full-stack React code",
+      "image_url": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=120",
+      "is_active" : false
+    },
+    {
+      "job_url": "react-native-developer",
+      "job_title": "React Native Developer",
+      "description": "Develop full-stack React-native applications",
+      "image_url": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=120",
+      "is_active" : false
+    },
+    {
+      "job_url": "clojure-elixir-erlang-developer",
+      "job_title": "Clojure/Elixir/Erlang Developer",
+      "description": "Develop full-stack Clojure/Elixir/Erlang code",
+      "image_url": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=120",
+      "is_active" : false
+    },
+    {
+      "job_url": "office_manager-executive_assistant",
+      "job_title": "Office Manager / Executive Assistant",
+      "description": "As we continue to grow, we are seeking an Office Manager to join our team and help us maintain a productive and thriving work environment.",
+      "image_url": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=120",
+      "is_active" : false 
+  }
+  ]
+}
