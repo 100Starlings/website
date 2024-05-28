@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,19 +45,37 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
+	//  scroll the services section left and right by 300px when the left and right arrows are clicked
+	const projectsRef = React.useRef<HTMLDivElement>(null);
+
+	const scrollLeft = () => {
+		if (projectsRef.current) {
+			projectsRef.current.scrollBy({ left: -780, behavior: "smooth" });
+		}
+	};
+	const scrollRight = () => {
+		if (projectsRef.current) {
+			projectsRef.current.scrollBy({ left: 780, behavior: "smooth" });
+		}
+	};
 	return (
 		<section id="#projects" className="w-full flex flex-col gap-6">
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 				<p className="header">Client engagements we&apos;re proud of</p>
 				<div className="flex gap-4">
-					<ChevronLeftIcon className="h-6 w-6" />
-					<ChevronRightIcon className="h-6 w-6" />
+					<button onClick={scrollLeft}>
+						<ChevronLeftIcon className="h-6 w-6" />
+					</button>
+					<button onClick={scrollRight}>
+						<ChevronRightIcon className="h-6 w-6" />
+					</button>
 				</div>
 			</div>
 			<div className="w-full overflow-visible">
 				<div
+					ref={projectsRef}
 					style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
-					className="flex gap-6 w-full overflow-x-auto overflow-y-visible"
+					className="flex gap-6 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
 				>
 					{projects.map((project) => (
 						<Link

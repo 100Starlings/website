@@ -21,7 +21,7 @@ export default function ContactSection() {
 						We are a group of talented individuals from different delivery backgrounds. Through our collective
 						experience
 					</p>
-					<div className="text-[var(--text-darker)]">
+					<div className="text-[--text-darker]">
 						<div className="flex gap-4 items-center mb-[1.25rem]">
 							<div className="h-5 w-5">
 								<IdentificationIcon />
@@ -37,7 +37,7 @@ export default function ContactSection() {
 							<div className="h-5 w-5">
 								<BuildingOffice2Icon />
 							</div>
-							<p className=" text-xs text-[var(--text-darker)]">
+							<p className=" text-xs text-[--text-darker]">
 								Devonshire House, 582 Honeypot Lane, Stanmore, Middlesex <br />
 								United Kingdom, HA7 1JS
 							</p>

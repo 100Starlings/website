@@ -2,6 +2,10 @@
   @apply text-xl lg:text-3xl font-medium tracking-tight text-[var(--foreground-rgb)];
 }
 
+.header.light {
+  @apply text-white;
+}
+
 .text {
   @apply font-normal text-[var(--foreground-rgb)] text-sm lg:text-base;
 }
@@ -25,4 +29,8 @@
 
 .nav-bg {
   background: var(--nav-bg);
+}
+
+.card-img-max-width {
+  max-width: calc(100% - 2rem);
 }

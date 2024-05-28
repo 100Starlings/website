@@ -57,7 +57,7 @@ const EmailContactForm = () => {
 								type="text"
 								name="first_name"
 								autoComplete="given-name"
-								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-black/60 ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
+								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 bg-[--card-bg] ring-green placeholder focus:ring-0 sm:text-sm sm:leading-6"
 							/>
 						</div>
 					</div>
@@ -71,7 +71,7 @@ const EmailContactForm = () => {
 								type="text"
 								name="last_name"
 								autoComplete="family-name"
-								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-black/60 ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
+								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-[--card-bg] ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
 							/>
 						</div>
 					</div>
@@ -86,7 +86,7 @@ const EmailContactForm = () => {
 								name="company"
 								id="company"
 								autoComplete="organization"
-								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-black/60 ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
+								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-[--card-bg] ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
 							/>
 						</div>
 					</div>
@@ -101,7 +101,7 @@ const EmailContactForm = () => {
 								name="user_email"
 								id="email"
 								autoComplete="email"
-								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-black/60 ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
+								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-[--card-bg] ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
 							/>
 						</div>
 					</div>
@@ -116,7 +116,7 @@ const EmailContactForm = () => {
 								name="message"
 								id="message"
 								rows={4}
-								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-black/60 ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
+								className="block w-full rounded-md border-[1.5px] border-[var(--card-bg)] px-3.5 py-2 shadow-sm ring-0 ring-inset bg-[--card-bg] ring-green placeholder focus-visible:ring-green sm:text-sm sm:leading-6"
 								defaultValue={""}
 							/>
 						</div>

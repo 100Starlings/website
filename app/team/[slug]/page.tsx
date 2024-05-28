@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 					<Image src={currentMember?.image_url ?? ""} fill alt="Image of the team" style={{ objectFit: "cover" }} />
 					<div className="mt-auto z-30 py-[2rem] items-center flex flex-col gap-[1rem] w-full bg-transparent backdrop-blur-none bg-gradient-to-b from-black/0 to-black/30">
 						<div className="flex flex-col items-center">
-							<h1 className="header">
+							<h1 className="header light">
 								{currentMember?.first_name} {currentMember?.last_name}
 							</h1>
 							<p className="text-green">{currentMember?.title}</p>

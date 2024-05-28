@@ -27,18 +27,18 @@ export default function TeamCard({ id, first_name, last_name, title, description
 			<div
 				className={
 					showDesc
-						? "p-2 w-full h-full lg:avatar-overlay-hover bottom-0 backdrop-blur-xl bg-black/60  absolute z-10  flex items-end overflow-hidden"
-						: "p-2 w-full h-full bottom-0 backdrop-blur-none bg-gradient-to-b from-black/0 to-black text-gray-50 absolute z-10  flex items-end overflow-hidden"
+						? "p-2 w-full h-full lg:avatar-overlay-hover bottom-0 backdrop-blur-sm nav-bg  absolute z-10  flex items-end overflow-hidden"
+						: "p-2 w-full h-[40%] bottom-0 backdrop-blur-none bg-gradient-to-b from-black/0 to-black/80 absolute z-10  flex items-end overflow-hidden"
 				}
 			>
 				<div>
-					<h1 className="text-gray-200 text-[0.85rem] md:text-[1rem] font-semibold font-primary">
+					<h1 className="text-[0.85rem] md:text-[1rem] font-semibold text-white">
 						{first_name} {last_name}
 					</h1>
-					<h2 className="text-[0.65rem] md:text-[0.7rem] font-base font-secondary text-green">{title}</h2>
+					<h2 className="text-[0.65rem] md:text-[0.7rem] font-base text-green">{title}</h2>
 					{showDesc ? (
 						<div>
-							<p className="pt-2 text-[0.75rem] md:text-[0.85rem] font-secondary font-light">
+							<p className="pt-2 text-[0.75rem] md:text-[0.85rem]">
 								{description.length > 100 ? `${description.substring(0, 100)}...` : description}
 							</p>
 						</div>

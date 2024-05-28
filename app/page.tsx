@@ -8,6 +8,7 @@ import OurTeamSection from "./sections/OurTeamSection";
 import ContactSection from "./sections/ContactSection";
 import PricingSection from "./sections/PricingSection";
 import Link from "next/link";
+import ProductSection from "./sections/ProductSection";
 
 export default function Home() {
 	return (
@@ -18,7 +19,8 @@ export default function Home() {
 			<ProjectsSection />
 			<h1 className="header mb-10">Meet the team</h1>
 			<OurTeamSection />
-			<PricingSection />
+			{/* <PricingSection /> */}
+			<ProductSection />
 			<ContactSection />
 			<footer className="flex flex-col w-full max-w-7xl p-4 lg:px-0 mx-auto h-auto justify-between">
 				<div className="flex z-40 gap-4 justify-center">
