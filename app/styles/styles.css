@@ -22,3 +22,7 @@
 .card:hover {
   box-shadow: 0 0 40rem rgba(3, 167, 157, 0.1), 0 0 40rem rgba(28, 117, 188, 0.05);
 }
+
+.nav-bg {
+  background: var(--nav-bg);
+}
