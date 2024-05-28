@@ -2,9 +2,10 @@
 
 import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const features = [
+const services = [
 	{
 		name: "Web Development",
 		slug: "web-development",
@@ -15,7 +16,7 @@ const features = [
 	},
 	{
 		name: "Full Project Delivey",
-		slug: "web-development",
+		slug: "full-project-delivery",
 		description:
 			"You will get a dedicated team to take care of the full product delivery. We design, we code, and we ship your application.",
 		imageUrl:
@@ -30,7 +31,7 @@ const features = [
 	},
 	{
 		name: "Team Extension",
-		slug: "consulting",
+		slug: "team-extension",
 		description:
 			"Gain competitive advantige by leveraging a specialized team tailored to meet your unique business requirements. We provide our best developers, consultants who work as part of your team.",
 		imageUrl:
@@ -38,7 +39,7 @@ const features = [
 	},
 	{
 		name: "MVP for Startups",
-		slug: "design",
+		slug: "mvp-for-startups",
 		description:
 			"Using our startup experience, we design and build your MVP so you can test your business concept with a real product.",
 		imageUrl:
@@ -62,7 +63,7 @@ const features = [
 	},
 	{
 		name: "UX/UI Design",
-		slug: "devops",
+		slug: "ux-ui-design",
 		description:
 			"We help you learn more about your users and explore possible competitors and discover market gaps. We completely design your product. Our design team creates code-ready design, speeding up the technological implementation.",
 		imageUrl:
@@ -104,8 +105,9 @@ export default function ServicesSection() {
 					style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
 					className="flex gap-6 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
 				>
-					{features.map((feature) => (
-						<div
+					{services.map((feature) => (
+						<Link
+							href={`/services/${feature.slug}`}
 							key={feature.name}
 							className="snap-center relative card rounded-lg overflow-hidden min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
@@ -113,7 +115,7 @@ export default function ServicesSection() {
 							<div className="w-full h-full backdrop-blur-none bg-gradient-to-b from-black/0 to-black/60 p-6 text-gray-50 absolute z-0 flex items-end rounded-md">
 								<p className="font-semibold text-2xl text-white/90 text-center">{feature.name}</p>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 			</div>

@@ -2,6 +2,10 @@
   @apply text-xl lg:text-3xl font-medium tracking-tight text-[var(--foreground-rgb)];
 }
 
+.header.large {
+  @apply text-3xl lg:text-5xl;
+}
+
 .header.light {
   @apply text-white;
 }
