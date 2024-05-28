@@ -3,8 +3,8 @@ import React from "react";
 
 export default function AboutUsSection() {
 	return (
-		<section id="#about-us" className="flex w-full max-w-7xl card overflow-hidden min-h-[30rem]">
-			<div className="flex gap-6 flex-col w-full h-full p-[4rem] justify-center my-auto">
+		<section id="#about-us" className="flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[30rem]">
+			<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
 				<p className="header">Get to know us</p>
 				<p className="text">
 					We are a group of talented individuals from different delivery backgrounds. Through our collective experience
@@ -14,7 +14,7 @@ export default function AboutUsSection() {
 					that one would—without the overheads.
 				</p>
 			</div>
-			<div className="relative w-full min-w-[50%]">
+			<div className="relative w-full min-w-[50%] min-h-[40svh]">
 				<Image
 					src="/images/team-img-min.jpg"
 					className="rounded-md "

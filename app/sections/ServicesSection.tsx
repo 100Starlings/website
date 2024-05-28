@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
 
@@ -74,8 +74,8 @@ export default function ServicesSection() {
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 				<p className="header">How can we help you?</p>
 				<div className="flex gap-4">
-					<ArrowLeftIcon className="h-6 w-6" />
-					<ArrowRightIcon className="h-6 w-6" />
+					<ChevronLeftIcon className="h-6 w-6" />
+					<ChevronRightIcon className="h-6 w-6" />
 				</div>
 			</div>
 			<div className="w-full overflow-x-visible">
@@ -86,7 +86,7 @@ export default function ServicesSection() {
 					{features.map((feature) => (
 						<div
 							key={feature.name}
-							className="relative rounded-lg overflow-hidden min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="relative card rounded-lg overflow-hidden min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image src={feature.imageUrl} alt="hero" fill style={{ objectFit: "cover", zIndex: "0" }} />
 							<div className="w-full h-full backdrop-blur-none bg-gradient-to-b from-black/0 to-black/60 p-6 text-gray-50 absolute z-0 flex items-end rounded-md">

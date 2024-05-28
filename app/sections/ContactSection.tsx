@@ -14,8 +14,8 @@ export default function ContactSection() {
 		// 	<button className="button hidden xl:flex mx-auto">Let&apos;s talk</button>
 		// </section>
 		<section id="#about-us" className="flex w-full max-w-7xl card h-auto flex-col">
-			<div className="flex h-[37.7rem]">
-				<div className="flex gap-6 flex-col w-full min-h-[100%] p-[4rem] justify-center my-auto">
+			<div className="flex flex-col lg:flex-row h-[37.7rem]">
+				<div className="flex gap-6 flex-col w-full min-h-[100%] p-8 lg:p-[4rem] justify-center my-auto">
 					<p className="header"> Let&apos;s solve your challenges</p>
 					<p className="text mb-10">
 						We are a group of talented individuals from different delivery backgrounds. Through our collective
@@ -52,15 +52,8 @@ export default function ContactSection() {
 						</div>
 					</div>
 				</div>
-				<div className="relative w-full min-w-[50%] p-10 rounded-m">
+				<div className="w-full min-w-[50%] rounded-md bg-white/10 bg-gradient-to-tr from-green/20 to-white/20">
 					<EmailContactForm />
-					<Image
-						src="/images/team-img-min.jpg"
-						className="rounded-md z-[0] filter mix-blend-multiply brightness-[0.5] contrast-[1.2] grayscale-[0.8] opacity-[0.8] blur-[4px]"
-						fill
-						alt="Image of the team"
-						style={{ objectFit: "cover" }}
-					/>
 				</div>
 			</div>
 		</section>

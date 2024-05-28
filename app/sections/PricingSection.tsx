@@ -5,7 +5,7 @@ export default function PricingSection() {
 	return (
 		<section id="projects" className="w-full max-w-7xl flex flex-col items-center px-4 lg:px-0">
 			<p className="header">Our services</p>
-			<div className="flex w-full gap-6 mt-10 items-center">
+			<div className="flex flex-col lg:flex-row w-full gap-6 mt-10 items-center">
 				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						Development

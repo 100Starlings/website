@@ -34,7 +34,7 @@ const EmailContactForm = () => {
 	};
 
 	return (
-		<div className="z-50 absolute w-full bg-gradient-to-tr from-green/40 to-blue/40 top-0 left-0 right-0 p-10 rounded-md">
+		<div className="p-10 rounded-md">
 			{/* <button onClick={toggleModal}>Toggle Modal</button> */}
 
 			<form ref={form} onSubmit={sendEmail} className="mx-auto w-full max-w-screen xl:max-w-lg z-10">
