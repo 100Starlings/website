@@ -10,6 +10,7 @@
         "description": "Alex started in the industry in 2004 after completing a MMath and MSci Computing, and has been known to wear multiple hats, from solution architect, team lead, project manager, agile coach, UX advisor, sounding board and delivery advisor. Focus on Ruby and friends, primarily web oriented.",
         "image_url": "/images/team/Alex.png",
         "linkedin": "https://www.linkedin.com/in/alexstubbs/",
+        "calendar": "https://calendly.com/alex-stubbs",
         "isActive": true,
         "isExpert": true
       },
@@ -24,8 +25,9 @@
         "description": "has been delivering web development projects over the last 20 years and brings about an extremely varied knowledge - from software architecture to development team lead skills.  He is a voice of reason, never tiring to help out when something needs doing.",
         "image_url": "/images/team/Riccardo.png",
         "linkedin": "https://www.linkedin.com/in/riccardocambiassi/",
+        "calendar": "",
         "isActive": true,
-        "isExpert": false
+        "isExpert": true
       },
       {
         "id": 3,
@@ -233,6 +235,7 @@
         "description": "has over 4 years of experience in agile software development, mainly working with React front-end and Ruby on Rails back-end applications. Beyond her primary role, she has also collaborated in freelance projects as a UX Designer. Minimalist, analytical and collaborative are qualities which describe her.",
         "image_url": "/images/team/Luisa.png",
         "linkedin": "https://www.linkedin.com/in/lkinas/",
+        "calendar": "",
         "isActive": true,
         "isExpert": true
       },
