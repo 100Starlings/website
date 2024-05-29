@@ -23,7 +23,7 @@ export default function OurTeamSection() {
 	const activeTeamMembers = data.filter((member) => member.isActive);
 	return (
 		<section id="team" className="flex w-full max-w-7xl card overflow-hidden min-h-[80svh]">
-			<div className="w-screen overflow-scroll flex lg:grid grid-flow-cols lg:grid-flow-row grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6">
+			<div className="w-screen overflow-scroll gap-[1rem] flex lg:grid grid-flow-cols lg:grid-flow-row grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6">
 				{activeTeamMembers.map(({ id, first_name, last_name, title, description, image_url }) => (
 					<Link href={`/team/${first_name}-${last_name}`} key={id}>
 						<TeamCard

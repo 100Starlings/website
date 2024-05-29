@@ -23,7 +23,7 @@ const EmailContactForm = () => {
 		e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
 		emailjs.sendForm("service_0kdyeox", "template_2qf66jh", form.current, "owd3D6nlM9_JyPCgK").then(
-			(result) => {
+			() => {
 				toggleModal();
 				disableSubmitBtn();
 			},
@@ -35,17 +35,7 @@ const EmailContactForm = () => {
 
 	return (
 		<div className="p-10 rounded-md">
-			{/* <button onClick={toggleModal}>Toggle Modal</button> */}
-
 			<form ref={form} onSubmit={sendEmail} className="mx-auto w-full max-w-screen xl:max-w-lg z-10">
-				{/* <label>Name</label>
-			<input type="text" name="user_name" />
-			<label>Email</label>
-			<input type="email" name="user_email" />
-			<label>Message</label>
-			<textarea name="message" />
-		<input type="submit" value="Send" /> */}
-
 				<div className="grid grid-cols-1 gap-x-8 gap-y-4 xl:gap-y-6 sm:grid-cols-2">
 					<div>
 						<label type="text" name="first_name" htmlFor="first_name" className="block text-sm leading-6">

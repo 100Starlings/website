@@ -23,12 +23,13 @@
 }
 
 .card {
-  @apply bg-[var(--card-bg)] rounded-md ;
+  @apply bg-[--card-bg] rounded-md ;
   box-shadow: rgba(0, 0, 0, 1%) 0px 0px 1rem 0px;
 }
 
 .card:hover {
   box-shadow: 0 0 40rem rgba(3, 167, 157, 0.1), 0 0 40rem rgba(28, 117, 188, 0.05);
+  z-index: 0;
 }
 
 .nav-bg {

@@ -2,14 +2,14 @@
   "name": "Web Development",
   "slug": "web-development",
   "features": ["Solution design", "Frontend development", "Backend development"],
-  "specialist": "Alex",
+  "specialist": "Lajos",
   "description":
     "From simple landing pages to complex web applications, we build custom solutions that are tailored to your unique business needs.",
   "imageUrl":
     "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
 },
 {
-  "name": "Full Project Delivey",
+  "name": "Full Project Delivery",
   "slug": "full-project-delivery",
   "features": ["Project management", "Design", "Development", "Testing"],
   "specialist": "Alex",

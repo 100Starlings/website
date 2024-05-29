@@ -7,16 +7,16 @@ export default function HeroSection() {
 			id="/"
 			className="flex relative mb-[6rem] w-full flex-col card items-center justify-center min-h-[72svh] rounded-md overflow-hidden"
 		>
-			{/* <Image
+			<Image
 				src="/images/team-img-min.jpg"
 				layout="fill"
 				objectFit="cover"
 				objectPosition="center"
 				alt="Hero background"
 				quality={100}
-				className="z-[0] blur-[0px] brightness-[0.9] contrast-[1.1] grayscale-[1] opacity-[0]"
-			/> */}
-			<div className="flex flex-col items-center w-full justify-center flex-grow bg--black/80 backdrop-blur-sm bg-gradient-to-tr from-green/30 to-blue/10">
+				className="z-[0] blur-[50px] brightness-[1.2] contrast-[1.1] grayscale-[0.3] opacity-[0.8]"
+			/>
+			<div className="flex flex-col items-center w-full justify-center flex-grow bg-[--card-bg-60] backdrop-blur-xl">
 				<div className="z-10 flex items-center text-center text-[2.25rem] md:text-[4rem] lg:text-[4rem] tracking-[0.1rem] leading-tight">
 					<h1 className="font-semibold">CREATING </h1>
 					<h2 className="font-semibold ml-2 xl:ml-4">custom</h2>

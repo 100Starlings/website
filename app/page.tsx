@@ -12,7 +12,7 @@ import ProductSection from "./sections/ProductSection";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden">
+		<main className="flex min-h-screen w-full flex-col items-center justify-between overflow-x-hidden">
 			<HeroSection />
 			<ServicesSection />
 			<AboutUsSection />
@@ -22,15 +22,6 @@ export default function Home() {
 			{/* <PricingSection /> */}
 			<ProductSection />
 			<ContactSection />
-			<footer className="flex flex-col w-full max-w-7xl p-4 lg:px-0 mx-auto h-auto justify-between">
-				<div className="flex z-40 gap-4 justify-center">
-					<p className="text-sm">100Starlings © 2024</p>
-					<p className="opacity-50">|</p>
-					<Link href="/careers">
-						<p className="text-sm">Careers</p>
-					</Link>
-				</div>
-			</footer>
 		</main>
 	);
 }

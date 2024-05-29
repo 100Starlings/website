@@ -3,7 +3,6 @@ import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 
 // const services_name = Object.keys(services);
 // console.log(services_name);
@@ -18,7 +17,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 	}
 
 	return (
-		<div className="flex flex-col gap-[3rem] mb-[3rem]">
+		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem]">
 			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-md overflow-hidden">
 				<Image
 					src={currentService.imageUrl || ""}
@@ -39,9 +38,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 			</div>
 			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-hidden">
 				{/* <p className="header">Our Services</p> */}
-				<ul className="flex flex-col lg:flex-row gap-[3rem] justify-between w-full mx-auto">
+				<ul className="flex flex-col lg:flex-row  gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">
 					{currentService.features.map((feature, index) => (
-						<li key={index} className="flex gap-2 text card w-full  p-10">
+						<li key={index} className="flex gap-2 text card w-full p-[2rem]">
 							<CheckCircleIcon width={24} /> {feature}
 						</li>
 					))}
@@ -59,7 +58,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</div>
 				<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
 					<p className="header">Meet {currentService.specialist}, our specialist</p>
-					<p className="text">{currentSpecialist?.description}</p>
+					<p className="text">
+						{currentService.specialist} {currentSpecialist?.description}
+					</p>
 					<div>
 						<p className="text">Solve your problems with 1-1 guidance</p>
 						<p className="font-thin mb-6">Schedule a 30min call with our specialist </p>
