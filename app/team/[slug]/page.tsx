@@ -18,11 +18,17 @@ export default function Page({ params }: { params: { slug: string } }) {
 	}
 
 	return (
-		<div className="w-full min-h-[90svh] flex flex-col justify-center items-center">
-			<div className="w-full flex flex-col lg:flex-row min-h-[80svh] max-w-7xl p-[1rem] gap-[1rem]">
-				<div className="relative flex flex-col items-center w-full bg-white/60 min-h-[60svh] lg:min-h-[80svh] rounded-md overflow-hidden my-auto">
-					<Image src={currentMember?.image_url ?? ""} fill alt="Image of the team" style={{ objectFit: "cover" }} />
-					<div className="mt-auto z-30 py-[2rem] items-center flex flex-col gap-[1rem] w-full bg-transparent backdrop-blur-none bg-gradient-to-b from-black/0 to-black/30">
+		<div className="w-full min-h-[90svh] flex flex-col justify-center items-center p-[1rem]">
+			<div className="w-full flex card flex-col lg:flex-row max-w-7xl">
+				<div className="relative flex flex-col items-center w-full bg-white/60 min-h-[60svh] h-full lg:min-h-[80svh] rounded-md overflow-hidden my-auto">
+					<Image
+						src={currentMember?.image_url ?? ""}
+						fill
+						alt="Image of the team"
+						style={{ objectFit: "cover" }}
+						className="h-full"
+					/>
+					<div className="mt-auto z-30 py-[1rem] lg:py-[2rem] items-center flex flex-col gap-[1rem] w-full bg-transparent backdrop-blur-none bg-gradient-to-b from-black/0 to-black/30">
 						<div className="flex flex-col items-center">
 							<h1 className="header light">
 								{currentMember?.first_name} {currentMember?.last_name}
@@ -36,7 +42,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 								rel="noreferrer"
 								className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 							>
-								<Image src="/icons/Linkedin-icon.svg" width={30} height={30} alt="LinkedIn icon" />
+								<Image src="/icons/Linkedin-icon.svg" width={26} height={26} alt="LinkedIn icon" />
+								<p className="mt-1 text-xs">linkedin</p>
 							</a>
 							<a
 								href={currentMember?.email}
@@ -44,7 +51,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 								rel="noreferrer"
 								className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 							>
-								<Image src="/icons/Mail-icon.svg" width={30} height={30} alt="LinkedIn icon" />
+								<Image src="/icons/Mail-icon.svg" width={28} height={26} alt="Email icon" />
+								<p className="mt-auto text-xs">mail</p>
 							</a>
 							{currentMember?.isExpert && (
 								<a
@@ -53,14 +61,15 @@ export default function Page({ params }: { params: { slug: string } }) {
 									rel="noreferrer"
 									className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 								>
-									<Image src="/icons/Calendar-icon.svg" width={30} height={30} alt="LinkedIn icon" />
+									<Image src="/icons/Calendar-icon.svg" width={26} height={26} alt="Calendar icon" />
+									<p className="mt-auto text-xs">book</p>
 								</a>
 							)}
 						</div>
 					</div>
 				</div>
-				<div className="w-full min-w-[50%] flex flex-col">
-					<div className="flex flex-col card my-auto p-10 items-start justify-center">
+				<div className="w-full min-h-full min-w-[50%] flex flex-col">
+					<div className="flex flex-col min-h-full my-auto p-[1rem] lg:p-[4rem] items-start justify-center">
 						<div>
 							<p className="text">{currentMember?.description}</p>
 						</div>

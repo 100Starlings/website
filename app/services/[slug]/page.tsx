@@ -46,7 +46,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 					))}
 				</ul>
 			</div>
-			<div id="book" className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[30rem]">
+			<div id="book" className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]">
 				<div className="relative w-full min-w-[50%] min-h-[40svh]">
 					<Image
 						src={currentSpecialist?.image_url || ""}

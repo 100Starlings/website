@@ -34,7 +34,7 @@ const EmailContactForm = () => {
 	};
 
 	return (
-		<div className="p-10 rounded-md">
+		<div className="p-10 rounded-md w-full z-10">
 			<form ref={form} onSubmit={sendEmail} className="mx-auto w-full max-w-screen xl:max-w-lg z-10">
 				<div className="grid grid-cols-1 gap-x-8 gap-y-4 xl:gap-y-6 sm:grid-cols-2">
 					<div>

@@ -29,7 +29,7 @@ export default function PricingSection() {
 					</span>
 					<Link
 						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-semibold border-[1px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
+						className="mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-normal border-[1px] rounded-full text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
 					>
 						<span className="mx-auto">Get a quote</span>
 					</Link>
@@ -58,7 +58,7 @@ export default function PricingSection() {
 					</span>
 					<Link
 						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-green/80 backdrop-blur-2xl font-semibold border-[0px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
+						className="mt-10 h-[2.25rem] items-center flex bg-white/90 text-black backdrop-blur-2xl font-normal border-[0px] rounded-full text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
 					>
 						<span className="mx-auto">Speak to an expert</span>
 					</Link>
@@ -87,7 +87,7 @@ export default function PricingSection() {
 					</span>
 					<Link
 						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-semibold border-[1px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
+						className="mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-normal border-[1px] rounded-full text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
 					>
 						<span className="mx-auto">Get in touch</span>
 					</Link>

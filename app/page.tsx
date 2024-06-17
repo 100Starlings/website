@@ -17,10 +17,9 @@ export default function Home() {
 			<ServicesSection />
 			<AboutUsSection />
 			<ProjectsSection />
-			<h1 className="header mb-10">Meet the team</h1>
-			<OurTeamSection />
-			{/* <PricingSection /> */}
 			<ProductSection />
+			<OurTeamSection />
+			<PricingSection />
 			<ContactSection />
 		</main>
 	);

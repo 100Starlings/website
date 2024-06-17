@@ -15,15 +15,15 @@
 }
 
 .button {
-  @apply px-4 py-1.5 bg-white/90 text-black/90 rounded-md hover:bg-white hover:text-black;
+  @apply px-4 py-1.5 bg-white/90 text-black/90  hover:bg-white hover:text-black rounded-full;
 }
 
 .button.light {
-  @apply px-4 py-1.5 bg-transparent rounded-md border-[1px] border-[var(--text-light)] text-[var(--text-light)] hover:bg-white/60 hover:text-black;
+  @apply px-4 py-1.5 bg-transparent border-[1px] border-[var(--text-light)] text-[var(--text-light)] hover:bg-white/60 hover:text-black;
 }
 
 .card {
-  @apply bg-[--card-bg] rounded-md ;
+  @apply bg-[--card-bg] rounded-xl overflow-hidden;
   box-shadow: rgba(0, 0, 0, 1%) 0px 0px 1rem 0px;
 }
 
