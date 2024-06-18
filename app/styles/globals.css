@@ -52,11 +52,21 @@ body {
 }
 
 main {
- padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
   background: var(--bg-color);
+
+}
+
+@media screen and (min-width: 640px) {
+  main {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
 }
 
 section {
   margin-bottom: 8rem;
+  scroll-margin-top: 8rem;
 }

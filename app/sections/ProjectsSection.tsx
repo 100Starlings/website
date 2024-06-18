@@ -59,7 +59,7 @@ export default function ProjectsSection() {
 		}
 	};
 	return (
-		<section id="#projects" className="w-full flex flex-col gap-6">
+		<section id="projects" className="w-full flex flex-col gap-6">
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 				<p className="header">Client engagements we&apos;re proud of</p>
 				<div className="flex gap-4">

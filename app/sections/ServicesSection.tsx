@@ -103,13 +103,13 @@ export default function ServicesSection() {
 				<div
 					ref={servicesRef}
 					style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
-					className="flex gap-6 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
+					className="flex gap-4 lg:gap-8 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
 				>
 					{services.map((feature) => (
 						<Link
 							href={`/services/${feature.slug}`}
 							key={feature.name}
-							className="snap-center relative card rounded-lg overflow-hidden min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="snap-center relative card rounded-lg overflow-hidden min-w-[80vw] lg:min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image
 								src={feature.imageUrl}

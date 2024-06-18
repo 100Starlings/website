@@ -11,6 +11,7 @@
         "image_url": "/images/team/Alex.png",
         "linkedin": "https://www.linkedin.com/in/alexstubbs/",
         "calendar": "https://calendly.com/alex-stubbs",
+        "expertises": ["Dev", "Design", "Agile", "UX"],
         "isActive": true,
         "isExpert": true
       },

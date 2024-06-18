@@ -13,7 +13,7 @@ export default function ContactSection() {
 		// 	<p className="header mb-4 text-center mx-auto">Let&apos;s solve YOUR challenges</p>
 		// 	<button className="button hidden xl:flex mx-auto">Let&apos;s talk</button>
 		// </section>
-		<section id="#about-us" className="flex w-full max-w-7xl card h-auto flex-col">
+		<section id="contact" className="flex w-full max-w-7xl card h-auto flex-col">
 			<div className="flex flex-col lg:flex-row min-h-[40rem]">
 				<div className="flex gap-6 flex-col w-full min-h-[100%] p-8 lg:p-[4rem] justify-center my-auto">
 					<p className="header"> Let&apos;s solve your challenges</p>
