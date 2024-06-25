@@ -6,7 +6,7 @@ export default function PricingSection() {
 		<section id="pricing" className="w-full max-w-7xl flex flex-col items-center">
 			<p className="header">Our services</p>
 			<div className="flex flex-col lg:flex-row w-full gap-6 mt-10 items-center">
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						Development
 					</h2>
@@ -31,7 +31,7 @@ export default function PricingSection() {
 						<span className="mx-auto">Get a quote</span>
 					</Link>
 				</div>
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						Consulting
 					</h2>
@@ -57,7 +57,7 @@ export default function PricingSection() {
 						<span className="mx-auto ">Speak to an expert</span>
 					</Link>
 				</div>
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						DevOps
 					</h2>

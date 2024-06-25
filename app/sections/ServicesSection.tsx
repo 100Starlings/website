@@ -44,17 +44,17 @@ export default function ServicesSection() {
 						<Link
 							href={`/services/${feature.slug}`}
 							key={feature.name}
-							className="snap-center relative card rounded-lg overflow-hidden min-w-[80vw] lg:min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="snap-center relative rounded-xl overflow-hidden min-w-[80vw] lg:min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image
 								src={feature.imageUrl}
 								alt="hero"
 								fill
 								style={{ objectFit: "cover", zIndex: "0" }}
-								className="blur-12 object-cover"
+								className="image"
 							/>
 							<div className="w-full h-full backdrop-blur-none bg-gradient-to-b from-black/10 to-black/30 p-6 text-gray-50 absolute z-0 flex items-end">
-								<p className="font-semibold text-2xl text-white/90 text-center">{feature.name}</p>
+								<p className="font-semibold text-2xl text-white/100 text-center">{feature.name}</p>
 							</div>
 						</Link>
 					))}

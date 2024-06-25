@@ -12,7 +12,7 @@ export default function ProductSection() {
 						alt="hero"
 						fill
 						style={{ objectFit: "cover", zIndex: "0" }}
-						className="blur-12 object-cover w-full h-full top-0 left-0 opacity-60"
+						className="image"
 					/>
 				</div>
 				<Image

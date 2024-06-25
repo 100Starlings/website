@@ -59,7 +59,7 @@ export default function ContactSection() {
 							alt="hero"
 							fill
 							style={{ objectFit: "cover", zIndex: "0" }}
-							className="blur-12 object-cover w-full h-full top-0 left-0 opacity-90"
+							className="image"
 						/>
 					</div>
 					<EmailContactForm />

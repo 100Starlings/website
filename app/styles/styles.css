@@ -43,3 +43,7 @@
 .card-img-max-width {
   max-width: calc(100% - 2rem);
 }
+
+.image {
+  @apply blur-[0px] object-cover brightness-50 w-full h-full ;
+}
