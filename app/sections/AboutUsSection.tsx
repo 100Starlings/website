@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AboutUsSection() {
 	return (
-		<section id="#about-us" className="flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[30rem]">
+		<section id="about" className="flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]">
 			<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
 				<p className="header">Get to know us</p>
 				<p className="text">
@@ -14,10 +14,10 @@ export default function AboutUsSection() {
 					that one would—without the overheads.
 				</p>
 			</div>
-			<div className="relative w-full min-w-[50%] min-h-[40svh]">
+			<div className="relative w-full min-w-[50%] min-h-[40svh] overflow-hidden rounded-xl">
 				<Image
-					src="/images/team-img-min.jpg"
-					className="rounded-md "
+					src="https://images.unsplash.com/photo-1598160882026-6e61d16dc8c4?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					className="rounded-xl"
 					fill
 					alt="Image of the team"
 					style={{ objectFit: "cover" }}

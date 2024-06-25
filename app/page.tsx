@@ -10,6 +10,7 @@ import ClientsSection from "./sections/ClientsSection"
 import PricingSection from "./sections/PricingSection";
 import Link from "next/link";
 import ProductSection from "./sections/ProductSection";
+import ClientsSection from "./sections/ClientsSection";
 
 export default function Home() {
 	return (
@@ -17,12 +18,12 @@ export default function Home() {
 			<HeroSection />
 			<ClientsSection />
 			<ServicesSection />
+			<ClientsSection />
 			<AboutUsSection />
 			<ProjectsSection />
-			<h1 className="header mb-10">Meet the team</h1>
-			<OurTeamSection />
-			{/* <PricingSection /> */}
 			<ProductSection />
+			<OurTeamSection />
+			<PricingSection />
 			<ContactSection />
 		</main>
 	);

@@ -3,10 +3,10 @@ import React from "react";
 
 export default function PricingSection() {
 	return (
-		<section id="projects" className="w-full max-w-7xl flex flex-col items-center px-4 lg:px-0">
+		<section id="pricing" className="w-full max-w-7xl flex flex-col items-center">
 			<p className="header">Our services</p>
 			<div className="flex flex-col lg:flex-row w-full gap-6 mt-10 items-center">
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						Development
 					</h2>
@@ -27,14 +27,11 @@ export default function PricingSection() {
 							<li>API Development</li>
 						</ul>
 					</span>
-					<Link
-						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-semibold border-[1px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
-					>
+					<Link href="/#contact" className="mt-10 mx-auto button light w-full flex flex-col items-center">
 						<span className="mx-auto">Get a quote</span>
 					</Link>
 				</div>
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						Consulting
 					</h2>
@@ -56,14 +53,11 @@ export default function PricingSection() {
 							<li>API Development</li>
 						</ul>
 					</span>
-					<Link
-						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-green/80 backdrop-blur-2xl font-semibold border-[0px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
-					>
-						<span className="mx-auto">Speak to an expert</span>
+					<Link href="/#contact" className="mt-10 mx-auto button dark w-full flex flex-col items-center">
+						<span className="mx-auto ">Speak to an expert</span>
 					</Link>
 				</div>
-				<div className="w-full rounded-xl card backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
+				<div className="w-full rounded-xl bg-[--card-bg] backdrop-blur-lg p-10 flex flex-col gap-6 h-full">
 					<h2 className="text-left text-xl font-semibold leading-8 tracking-[0.1rem] text-[var(--text-light)]">
 						DevOps
 					</h2>
@@ -85,10 +79,7 @@ export default function PricingSection() {
 							<li>API Development</li>
 						</ul>
 					</span>
-					<Link
-						href="/#contact"
-						className="w-full mt-10 h-[2.25rem] items-center flex bg-transparent border-white/50 font-semibold border-[1px] rounded-md text-md hover:bg-green hover:border-[1px] hover:border-green hover:text-white"
-					>
+					<Link href="/#contact" className="mt-10 button light w-full flex flex-col items-center">
 						<span className="mx-auto">Get in touch</span>
 					</Link>
 				</div>

@@ -18,7 +18,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 	return (
 		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem]">
-			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-md overflow-hidden">
+			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-xl overflow-hidden">
 				<Image
 					src={currentService.imageUrl || ""}
 					layout="fill"
@@ -26,9 +26,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 					objectPosition="center"
 					alt="Hero background"
 					quality={100}
-					className="z-[0] blur-[0px] brightness-[0.9] contrast-[1.1] grayscale-[0] opacity-[0.8]"
+					className="z-[0]"
 				/>
-				<div className="flex flex-col items-center w-full justify-center flex-grow bg--black/80 backdrop-blur-none bg-[--card-bg-60]">
+				<div className="flex flex-col text-white items-center w-full justify-center flex-grow backdrop-blur-none bg-gradient-to-t from-black/10 via-black/50 to-black/10">
 					<h1 className="header large mb-[1rem]">{currentService.name}</h1>
 					<p className="text max-w-xl text-center px-4 lg:px-0">{currentService.description}</p>
 					<a href="#book" className="button mt-6">
@@ -46,11 +46,11 @@ export default function Page({ params }: { params: { slug: string } }) {
 					))}
 				</ul>
 			</div>
-			<div id="book" className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[30rem]">
+			<div id="book" className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]">
 				<div className="relative w-full min-w-[50%] min-h-[40svh]">
 					<Image
 						src={currentSpecialist?.image_url || ""}
-						className="rounded-md "
+						className="rounded-xl"
 						fill
 						alt="Image of the team"
 						style={{ objectFit: "cover" }}
@@ -63,8 +63,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 					</p>
 					<div>
 						<p className="text">Solve your problems with 1-1 guidance</p>
-						<p className="font-thin mb-6">Schedule a 30min call with our specialist </p>
-						<a href={currentSpecialist?.calendar || ""} className="button">
+						<p className="font-light mb-6">Schedule a 30min call with our specialist </p>
+						<a href={currentSpecialist?.calendar || ""} className="button dark">
 							Book a session
 						</a>
 					</div>

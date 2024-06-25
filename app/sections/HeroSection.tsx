@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
@@ -8,20 +9,19 @@ export default function HeroSection() {
 			className="flex relative mb-[6rem] w-full flex-col card items-center justify-center min-h-[72svh] rounded-md overflow-hidden"
 		>
 			<Image
-				src="/images/team-img-min.jpg"
+				src="https://images.unsplash.com/photo-1570342457566-0002e712eda3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 				layout="fill"
 				objectFit="cover"
 				objectPosition="center"
-				alt="Hero background"
-				quality={100}
-				className="z-[0] blur-[50px] brightness-[1.2] contrast-[1.1] grayscale-[0.3] opacity-[0.8]"
+				alt="hero"
+				className="image"
 			/>
-			<div className="flex flex-col items-center w-full justify-center flex-grow bg-[--card-bg-60] backdrop-blur-xl">
-				<div className="z-10 flex items-center text-center text-[2.25rem] md:text-[4rem] lg:text-[4rem] tracking-[0.1rem] leading-tight">
+			<div className="flex text-white flex-col items-center w-full justify-center flex-grow  backdrop-blur-none bg-black/30">
+				<div className="z-10 flex items-center text-center text-[2rem] md:text-[4rem] lg:text-[4rem] tracking-[0.1rem] leading-tight">
 					<h1 className="font-semibold">CREATING </h1>
 					<h2 className="font-semibold ml-2 xl:ml-4">custom</h2>
 				</div>
-				<div className="z-10 text-[2.1rem] md:text-[3rem] lg:text-[3.5rem] flex items-baseline tracking-[0.1rem] leading-tight">
+				<div className="z-10 text-[1.9rem] md:text-[3rem] lg:text-[3.5rem] flex items-baseline tracking-[0.1rem] leading-tight">
 					<h2 className="mr-2 xl:mr-4 font-semibold">digital</h2>
 					<h1 className="font-semibold">SOLUTIONS </h1>
 				</div>
@@ -30,10 +30,10 @@ export default function HeroSection() {
 					for today&apos;s digital world.
 				</p>
 
-				<div className="z-10 flex gap-6 mt-8">
-					<button className="button">Contact</button>
-					<button className="button light">Services</button>
-				</div>
+				<Link href="/#services" className="z-10 flex gap-6 mt-8">
+					{/* <button className="button">Contact</button> */}
+					<button className="button ">Services</button>
+				</Link>
 			</div>
 		</section>
 	);
