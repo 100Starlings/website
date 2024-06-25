@@ -61,10 +61,10 @@ export default function ClientsSection() {
 	return (
 		<section className="flex flex-col w-full max-w-7xl justify-between items-start gap-[2rem]">
 			<p className="header">Clients we have worked with</p>
-			<div className="flex flex-row flex-wrap items-center justify-center gap-[1rem] lg:justify-start">
+			<div className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center gap-[3rem] lg:justify-start">
 				{clients.map((client, index) => (
 					<a href={client.websiteUrl} target="_blank" rel="noopener noreferrer">
-						<img src={client.imageURL} alt={client.altText} className="h-auto w-auto object-contain" />
+						<img src={client.imageURL} alt={client.altText} className="w-[4rem] lg:w-auto object-contain" />
 					</a>
 				))}
 			</div>
