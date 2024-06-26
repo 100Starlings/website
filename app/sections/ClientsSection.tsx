@@ -1,7 +1,7 @@
 export default function ClientsSection() {
   return (
     <div className="flex flex-col w-full justify-between items-start gap-[2rem] max-w-7xl">
-      <p className="header">Clients we have worked with</p>
+      <p className="header">Clients we have worked with recently</p>
       <div className="flex items-center justify-center mb-8">
         <div className="flex flex-wrap justify-center items-center px-4">
           <a href="https://www.yodel.co.uk" target="_blank" rel="noopener noreferrer">
