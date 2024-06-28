@@ -10,16 +10,17 @@ import ClientsSection from "./sections/ClientsSection";
 import PricingSection from "./sections/PricingSection";
 import Link from "next/link";
 import ProductSection from "./sections/ProductSection";
+import RecentClientsSection from "./sections/RecentClientsSection";
 
 export default function Home() {
 	return (
 		<main className="flex min-h-screen w-full flex-col items-center justify-between overflow-x-hidden">
 			<HeroSection />
-			{/* <ClientsSection /> */}
 			<ServicesSection />
-			<ClientsSection />
+			<RecentClientsSection />
 			<AboutUsSection />
 			<ProjectsSection />
+			<ClientsSection />
 			<ProductSection />
 			<OurTeamSection />
 			<PricingSection />
