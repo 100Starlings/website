@@ -47,3 +47,8 @@
 .image {
   @apply blur-[0px] object-cover brightness-50 w-full h-full ;
 }
+
+.gallery-photo:hover img:not(.no-hover) {
+  transform: scale(1.05);
+  transition: transform .2s ease-in-out;
+}

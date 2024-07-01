@@ -44,7 +44,7 @@ export default function ServicesSection() {
 						<Link
 							href={`/services/${feature.slug}`}
 							key={feature.name}
-							className="snap-center relative rounded-xl overflow-hidden min-w-[80vw] lg:min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="snap-center relative rounded-xl gallery-photo overflow-hidden min-w-[80vw] lg:min-w-[23rem] h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image
 								src={feature.imageUrl}

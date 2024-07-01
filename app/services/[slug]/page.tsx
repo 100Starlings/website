@@ -28,7 +28,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 					quality={100}
 					className="z-[0] image"
 				/>
-				<div className="flex flex-col text-white items-center w-full justify-center flex-grow backdrop-blur-none bg-gradient-to-t from-black/60 via-black/80 to-black/60">
+				<div className="flex flex-col text-white items-center w-full justify-center flex-grow backdrop-blur-none bg-gradient-to-t from-black/20 via-black/50 to-black/20">
 					<h1 className="header large mb-[1rem]">{currentService.name}</h1>
 					<p className="text max-w-xl text-center px-4 lg:px-0">{currentService.description}</p>
 					<a href="#book" className="button mt-6">

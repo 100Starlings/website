@@ -21,7 +21,7 @@ export default function TeamCard({ id, first_name, last_name, title, description
 			}}
 			passHref
 			key={id}
-			className="min-w-[16rem] h-[16rem] rounded-lg overflow-hidden bg-cover bg-bottom bg-no-repeat relative" //cursor-pointer
+			className="min-w-[16rem] h-[16rem] rounded-lg gallery-photo overflow-hidden bg-cover bg-bottom bg-no-repeat relative" //cursor-pointer
 		>
 			<Image src={image_url} fill style={{ objectFit: "cover" }} alt={`Picture of ${first_name}`} />
 			<div
@@ -32,7 +32,13 @@ export default function TeamCard({ id, first_name, last_name, title, description
 				}
 			>
 				<div>
-					<h1 className="text-[0.85rem] md:text-[1rem] font-semibold text-white">
+					<h1
+						className={
+							showDesc
+								? "text-[0.85rem] md:text-[1rem] font-semibold text-[--text-color]"
+								: "text-[0.85rem] md:text-[1rem] font-semibold text-white"
+						}
+					>
 						{first_name} {last_name}
 					</h1>
 					<h2 className="text-[0.65rem] md:text-[0.7rem] font-base text-green">{title}</h2>
