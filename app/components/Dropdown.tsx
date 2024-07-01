@@ -13,7 +13,11 @@ const Dropdown = ({ title, items }: { title: string; items: any[] }) => {
 		<div className="w-full flex flex-col gap-4 my-2 lg:my-4">
 			<button onClick={toggleDropdown} className="w-full flex text-lg justify-between items-center focus:outline-none">
 				{title}
-				{isOpen ? <ChevronDownIcon className="h-4 w-4" /> : <ChevronRightIcon className="h-4 w-4" />}
+				{isOpen ? (
+					<ChevronDownIcon className="h-4 w-4 text-[--devider]" />
+				) : (
+					<ChevronRightIcon className="h-4 w-4 text-[--devider]" />
+				)}
 			</button>
 			{isOpen && <p className="text">{items}</p>}
 		</div>
