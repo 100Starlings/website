@@ -87,7 +87,11 @@ export default function ClientsSection() {
 						rel="noopener noreferrer"
 						className="hover:opacity-80 transition-opacity duration-300 ease-in-out"
 					>
-						<img src={client.imageURL} alt={client.altText} className="w-[4rem] lg:w-auto object-contain" />
+						<img
+							src={client.imageURL}
+							alt={client.altText}
+							className="w-[4rem] max-h-[3rem] lg:w-auto object-contain"
+						/>
 					</a>
 				))}
 			</div>
