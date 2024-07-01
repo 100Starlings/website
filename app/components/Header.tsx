@@ -78,7 +78,11 @@ export default function Header() {
 					<button className="button light text-sm hidden lg:block">Get in touch</button>
 				</Link>
 
-				<button onClick={() => openNav(!open)} className="lg:hidden text-[--text-light] h-10 w-10">
+				<button
+					aria-label="Hamburger menu"
+					onClick={() => openNav(!open)}
+					className="lg:hidden text-[--text-light] h-10 w-10"
+				>
 					{open ? <XMarkIcon /> : <Bars3Icon />}
 				</button>
 			</div>

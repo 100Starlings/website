@@ -63,10 +63,10 @@ export default function ProjectsSection() {
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 				<p className="header">Client engagements we&apos;re proud of</p>
 				<div className="flex gap-4">
-					<button onClick={scrollLeft}>
+					<button aria-label="Scroll left button" onClick={scrollLeft}>
 						<ChevronLeftIcon className="h-6 w-6" />
 					</button>
-					<button onClick={scrollRight}>
+					<button aria-label="Scroll right button" onClick={scrollRight}>
 						<ChevronRightIcon className="h-6 w-6" />
 					</button>
 				</div>

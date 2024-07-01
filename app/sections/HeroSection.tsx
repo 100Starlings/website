@@ -14,6 +14,7 @@ export default function HeroSection() {
 				objectFit="cover"
 				objectPosition="center"
 				alt="hero"
+				loading="eager"
 				className="image"
 			/>
 			<div className="flex text-white flex-col items-center w-full justify-center flex-grow  backdrop-blur-none bg-black/30">

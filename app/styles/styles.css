@@ -11,7 +11,7 @@
 }
 
 .text {
-  @apply font-normal text-[var(--foreground-rgb)] text-sm lg:text-base;
+  @apply font-normal text-[--foreground-rgb] text-sm lg:text-base;
 }
 
 .button {

@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import team from "@/data/team.json";
 import Link from "next/link";
+import Dropdown from "../../components/Dropdown";
 
 export default function Page({ params }: { params: { slug: string } }) {
 	let currentMember = team.find((member) => `${member.first_name}-${member.last_name}` === params.slug);
@@ -70,10 +73,24 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</div>
 				<div className="w-full min-h-full min-w-[50%] flex flex-col">
 					<div className="flex flex-col min-h-full my-auto p-[1rem] lg:p-[4rem] items-start justify-center">
-						<div>
+						<div className="mb-8">
+							<h2 className="header mb-2">Bio</h2>
 							<p className="text">{currentMember?.description}</p>
 						</div>
-						{/* <h2 className="header my-4">Expertises</h2> */}
+						{currentMember?.expertises && (
+							<>
+								<h2 className="header mb-2">Expertises</h2>
+								<ul className="grid grid-cols-1 divide-y divide-[--devider] w-full max-w-xl">
+									{currentMember?.expertises?.map((expertise, index) =>
+										Object.entries(expertise).map(([title, items]) => (
+											<li key={index} className="w-full">
+												<Dropdown title={title} items={Array.isArray(items) ? items : [items]} />
+											</li>
+										))
+									)}
+								</ul>
+							</>
+						)}
 					</div>
 				</div>
 			</div>
