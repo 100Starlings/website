@@ -7,10 +7,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const MobileMenu = ({ open, openNav }: { open: boolean; openNav: (isOpen: boolean) => void }) => {
 	return (
-		<nav className=" bottom-0 left-0 right-0 p-[2rem] h-full flex flex-col justify-between items-center">
-			<ul className="flex flex-col gap-[2rem] text-xl text-center font-semibold mt-auto mb-auto">
+		<nav className="fixed inset-0 p-8 h-full flex flex-col justify-between items-center z-40">
+			<ul className="flex flex-col gap-8 text-xl text-center font-semibold mt-auto mb-auto">
 				<li>
-					<Link onClick={() => openNav(!open)} href="/#	">
+					<Link onClick={() => openNav(!open)} href="/#about">
 						About
 					</Link>
 				</li>
@@ -25,8 +25,8 @@ const MobileMenu = ({ open, openNav }: { open: boolean; openNav: (isOpen: boolea
 					</Link>
 				</li>
 			</ul>
-			<Link href="/#services">
-				<button onClick={() => openNav(!open)} className="button light text-sm ">
+			<Link href="/#contact">
+				<button onClick={() => openNav(!open)} className="button light text-sm">
 					Get in touch
 				</button>
 			</Link>
@@ -36,6 +36,28 @@ const MobileMenu = ({ open, openNav }: { open: boolean; openNav: (isOpen: boolea
 
 export default function Header() {
 	const [open, openNav] = React.useState(false);
+	const [lastScrollY, setLastScrollY] = React.useState(0);
+	const [hideHeader, setHideHeader] = React.useState(false);
+
+	React.useEffect(() => {
+		let lastScrollY = window.scrollY;
+
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			if (currentScrollY > lastScrollY && currentScrollY > 100) {
+				setHideHeader(true);
+			} else if (currentScrollY < lastScrollY) {
+				setHideHeader(false);
+			}
+			lastScrollY = currentScrollY;
+		};
+
+		window.addEventListener("scroll", handleScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	React.useEffect(() => {
 		if (open) {
@@ -51,13 +73,13 @@ export default function Header() {
 
 	return (
 		<header
-			className={
-				open
-					? "sticky z-50 top-0 h-screen w-screen nav-bg backdrop-blur-xl flex flex-col"
-					: "sticky z-50 h-auto top-0 w-full nav-bg backdrop-blur-xl"
-			}
+			className={`fixed z-50 top-0 ${
+				open ? "h-screen w-screen" : "h-auto w-full"
+			} nav-bg backdrop-blur-xl flex flex-col transition-transform duration-300 ${
+				hideHeader ? "-translate-y-full" : "translate-y-0"
+			}`}
 		>
-			<div className="mx-auto px-4 py-1 lg:py-3 flex justify-between items-center max-w-7xl w-full">
+			<div className="mx-auto px-4 py-1 lg:py-3 flex justify-between items-center max-w-7xl w-full z-50">
 				<Link href="/" className="text-[--text-light]">
 					<Logo />
 				</Link>

@@ -46,7 +46,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 								className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 							>
 								<Image src="/icons/Linkedin-icon.svg" width={26} height={26} alt="LinkedIn icon" />
-								<p className="mt-1 text-xs">linkedin</p>
+								<p className="mt-1 text-xs text-white/90">linkedin</p>
 							</a>
 							<a
 								href={currentMember?.email}
@@ -55,7 +55,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 								className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 							>
 								<Image src="/icons/Mail-icon.svg" width={28} height={26} alt="Email icon" />
-								<p className="mt-auto text-xs">mail</p>
+								<p className="mt-auto text-xs text-white/90">mail</p>
 							</a>
 							{currentMember?.isExpert && (
 								<a
@@ -65,7 +65,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 									className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
 								>
 									<Image src="/icons/Calendar-icon.svg" width={26} height={26} alt="Calendar icon" />
-									<p className="mt-auto text-xs">book</p>
+									<p className="mt-auto text-xs text-white/90">book</p>
 								</a>
 							)}
 						</div>
