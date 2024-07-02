@@ -38,12 +38,7 @@ const EmailContactForm = () => {
 			<form ref={form} onSubmit={sendEmail} className="mx-auto w-full max-w-screen xl:max-w-lg z-10">
 				<div className="grid grid-cols-1 gap-x-8 gap-y-4 xl:gap-y-6 sm:grid-cols-2">
 					<div>
-						<label
-							type="text"
-							name="first_name"
-							htmlFor="first_name"
-							className="text-[--bg-color] block text-sm leading-6"
-						>
+						<label type="text" name="first_name" htmlFor="first_name" className="text-white block text-sm leading-6">
 							First name*
 						</label>
 						<div className="mt-1 xl:mt-2.5">
@@ -57,7 +52,7 @@ const EmailContactForm = () => {
 						</div>
 					</div>
 					<div>
-						<label htmlFor="last_name" className="text-[--bg-color] block text-sm leading-6">
+						<label htmlFor="last_name" className="text-white block text-sm leading-6">
 							Last name*
 						</label>
 						<div className="mt-1 xl:mt-2.5">
@@ -71,7 +66,7 @@ const EmailContactForm = () => {
 						</div>
 					</div>
 					<div className="sm:col-span-2">
-						<label htmlFor="company" className="text-[--bg-color] block text-sm leading-6">
+						<label htmlFor="company" className="text-white block text-sm leading-6">
 							Company*
 						</label>
 						<div className="mt-1 xl:mt-2.5">
@@ -86,7 +81,7 @@ const EmailContactForm = () => {
 						</div>
 					</div>
 					<div className="sm:col-span-2">
-						<label htmlFor="email" className="text-[--bg-color] block text-sm leading-6">
+						<label htmlFor="email" className="text-white block text-sm leading-6">
 							Email*
 						</label>
 						<div className="mt-1 xl:mt-2.5">
@@ -102,7 +97,7 @@ const EmailContactForm = () => {
 					</div>
 
 					<div className="sm:col-span-2">
-						<label htmlFor="message" className="text-[--bg-color] block text-sm leading-6">
+						<label htmlFor="message" className="text-white block text-sm leading-6">
 							Message
 						</label>
 						<div className="mt-1 xl:mt-2.5">
