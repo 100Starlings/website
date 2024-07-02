@@ -19,7 +19,7 @@ const Dropdown = ({ title, items }: { title: string; items: any[] }) => {
 					<ChevronRightIcon className="h-4 w-4 text-[--devider]" />
 				)}
 			</button>
-			{isOpen && <p className="text">{items}</p>}
+			{isOpen && <p className="text-[--text-darker]">{items}</p>}
 		</div>
 	);
 };
