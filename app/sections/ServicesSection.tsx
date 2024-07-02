@@ -53,7 +53,7 @@ export default function ServicesSection() {
 								style={{ objectFit: "cover", zIndex: "0" }}
 								className="image"
 							/>
-							<div className="w-full h-full backdrop-blur-none bg-gradient-to-b from-black/10 to-black/30 p-6 text-gray-50 absolute z-0 flex items-end">
+							<div className="w-full h-full backdrop-blur-none p-6 absolute z-0 flex items-end">
 								<p className="font-semibold text-2xl text-white/100 text-center">{feature.name}</p>
 							</div>
 						</Link>

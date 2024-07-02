@@ -38,6 +38,8 @@
 
 .nav-bg {
   background: var(--nav-bg);
+  --tw-backdrop-blur: blur(12px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .card-img-max-width {
@@ -51,4 +53,5 @@
 .gallery-photo:hover img:not(.no-hover) {
   transform: scale(1.05);
   transition: transform .2s ease-in-out;
+  @apply brightness-75;
 }
