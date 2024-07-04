@@ -91,15 +91,15 @@ export default function ClientsSection() {
 	return (
 		<section className="flex flex-col w-full justify-between items-start gap-[2rem] max-w-7xl">
 			<p className="header pb-4">Members of our team have worked with</p>
-			<div className="container max-w-full flex flex-row justify-center">
-				<div className="flex flex-row flex-wrap items-center justify-center gap-[2rem]">
+			<div className="w-full flex flex-row justify-center">
+				<div className="w-full flex flex-row flex-wrap items-center justify-center gap-[2rem]">
 					{clients.map((client, index) => (
 						<div className={client.css} key={index}>
 							<a
 								href={client.websiteUrl}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="hover:opacity-80 transition-opacity duration-300 ease-in-out"
+								className="hover:opacity-80 transition-opacity duration-300 ease-in-out w-full"
 							>
 								<img src={client.imageURL} alt={client.altText} className="lg:w-auto object-contain" />
 							</a>

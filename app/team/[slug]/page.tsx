@@ -21,7 +21,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 	}
 
 	return (
-		<div className="w-full min-h-[90svh] flex flex-col justify-center items-center p-[1rem]">
+		<div className="w-full min-h-[90svh] flex flex-col justify-center items-center px-[1rem] pt-[3.75rem]">
 			<div className="w-full flex card flex-col lg:flex-row max-w-7xl">
 				<div className="relative flex flex-col items-center w-full bg-white/60 min-h-[60svh] h-full lg:min-h-[80svh] rounded-md overflow-hidden my-auto">
 					<Image

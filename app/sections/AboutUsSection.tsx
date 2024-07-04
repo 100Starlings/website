@@ -3,7 +3,10 @@ import React from "react";
 
 export default function AboutUsSection() {
 	return (
-		<section id="about" className="flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]">
+		<section
+			id="about"
+			className="flex flex-col scroll-pt-[4rem] lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]"
+		>
 			<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
 				<p className="header">Get to know us</p>
 				<p className="text">

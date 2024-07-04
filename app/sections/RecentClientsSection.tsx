@@ -70,7 +70,7 @@ export default function ClientsSection() {
 	return (
 		<section className="flex flex-col w-full max-w-7xl justify-between items-start gap-[2rem]">
 			<p className="header pb-4">Clients we have worked with</p>
-			<div className="container max-w-full flex flex-row justify-between">
+			<div className="max-w-full flex flex-row justify-between">
 				<div className="flex flex-row flex-wrap items-center justify-center gap-[2.5rem] w-full">
 					{clients.map((client, index) => (
 						<div className={client.css} key={index}>
