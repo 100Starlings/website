@@ -17,7 +17,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 	}
 
 	return (
-		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem]">
+		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem] pt-[3.75rem]">
 			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-xl overflow-hidden">
 				<Image
 					src={currentService.imageUrl || ""}

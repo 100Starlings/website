@@ -14,7 +14,7 @@ import RecentClientsSection from "./sections/RecentClientsSection";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen w-full flex-col items-center justify-between overflow-x-hidden">
+		<main className="flex min-h-screen w-full pt-[3.75rem] flex-col items-center justify-between overflow-x-hidden">
 			<HeroSection />
 			<ServicesSection />
 			<RecentClientsSection />

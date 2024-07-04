@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const MobileMenu = ({ open, openNav }: { open: boolean; openNav: (isOpen: boolean) => void }) => {
 	return (
-		<nav className="fixed inset-0 p-8 h-full flex flex-col justify-between items-center z-40">
+		<nav className="fixed inset-0 p-8 h-full flex flex-col justify-between items-center z-40 translate-y-0 transition-transform duration-300">
 			<ul className="flex flex-col gap-8 text-xl text-center font-semibold mt-auto mb-auto">
 				<li>
 					<Link onClick={() => openNav(!open)} href="/#about">
