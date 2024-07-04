@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 	return (
 		<div className="w-full min-h-[90svh] flex flex-col justify-center items-center px-[1rem] pt-[3.75rem]">
 			<div className="w-full flex card flex-col lg:flex-row max-w-7xl">
-				<div className="relative flex flex-col items-center w-full bg-white/60 min-h-[60svh] h-full lg:min-h-[80svh] rounded-md overflow-hidden my-auto">
+				<div className="relative flex flex-col items-center w-full bg-white/60 min-h-[60svh] h-full lg:min-h-[80svh] rounded-xl overflow-hidden my-auto">
 					<Image
 						src={currentMember?.image_url ?? ""}
 						fill
@@ -57,7 +57,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 								<Image src="/icons/Mail-icon.svg" width={28} height={26} alt="Email icon" />
 								<p className="mt-auto text-xs text-white/90">mail</p>
 							</a>
-							{currentMember?.isExpert && (
+							{currentMember?.calendar && (
 								<a
 									href={currentMember?.calendar}
 									target="_blank"
@@ -77,16 +77,17 @@ export default function Page({ params }: { params: { slug: string } }) {
 							<h2 className="header mb-2">Bio</h2>
 							<p className="text">{currentMember?.description}</p>
 						</div>
-						{currentMember?.expertises && (
+						{currentMember?.expertise && (
 							<>
-								<h2 className="header mb-2">Expertises</h2>
+								<h2 className="header mb-2">Expertise</h2>
 								<ul className="grid grid-cols-1 divide-y divide-[--devider] w-full max-w-xl">
-									{currentMember?.expertises?.map((expertise, index) =>
-										Object.entries(expertise).map(([title, items]) => (
-											<li key={index} className="w-full">
-												<Dropdown title={title} items={Array.isArray(items) ? items : [items]} />
-											</li>
-										))
+									{currentMember?.expertise?.map(
+										(expertise: { [s: string]: unknown } | ArrayLike<unknown>, index: React.Key | null | undefined) =>
+											Object.entries(expertise).map(([title, items]) => (
+												<li key={index} className="w-full">
+													<Dropdown title={title} items={Array.isArray(items) ? items : [items]} />
+												</li>
+											))
 									)}
 								</ul>
 							</>
