@@ -2,7 +2,7 @@
   "name": "Web Development",
   "slug": "web-development",
   "features": ["Solution design", "Frontend development", "Backend development"],
-  "specialist": "Lajos",
+  "specialists": ["Lajos Jablonszky", "Alex Stubbs"],
   "description":
     "From simple landing pages to complex web applications, we build custom solutions that are tailored to your unique business needs.",
   "imageUrl":
@@ -12,7 +12,7 @@
   "name": "Full Project Delivery",
   "slug": "full-project-delivery",
   "features": ["Project management", "Design", "Development", "Testing"],
-  "specialist": "Alex",
+  "specialists": ["Alex Stubbs"],
   "description":
     "You will get a dedicated team to take care of the full product delivery. We design, we code, and we ship your application.",
   "imageUrl":
@@ -22,7 +22,7 @@
   "name": "App Development",
   "slug": "app-development",
   "features": ["iOS", "Android", "Cross-platform"],
-  "specialist": "Richie",
+  "specialists": ["Richie Viteri"],
   "description": "From iOS to Android, we build mobile applications that are tailored to your unique business needs.",
   "imageUrl":
     "https://images.unsplash.com/photo-1625993254667-a6b8dc27e531?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -31,7 +31,7 @@
   "name": "Team Extension",
   "slug": "team-extension",
   "features": ["Development", "Consulting", "Support"],
-  "specialist": "Alex",
+  "specialists": ["Alex Stubbs"],
   "description":
     "Gain competitive advantige by leveraging a specialized team tailored to meet your unique business requirements. We provide our best developers, consultants who work as part of your team.",
   "imageUrl":
@@ -41,7 +41,7 @@
   "name": "MVP for Startups",
   "slug": "mvp-for-startups",
   "features": ["Solution design", "Development", "Testing"],
-  "specialist": "Alex",
+  "specialists": ["Alex Stubbs"],
   "description":
     "Using our startup experience, we design and build your MVP so you can test your business concept with a real product.",
   "imageUrl":
@@ -51,7 +51,7 @@
   "name": "Consulting",
   "slug": "consulting",
   "features": ["Solution design", "DevOps", "Arhitecture", "QA", "Security"],
-  "specialist": "Alex",
+  "specialists": ["Alex Stubbs", "Riccardo Cambiassi"],
   "description":
     "We understand technology and development, enabling your business to focus on its core strengths. Whether it's selecting the right platform, programming language, or enhancing your existing website, our consultants are here to help.",
   "imageUrl":
@@ -61,7 +61,7 @@
   "name": "DevOps",
   "slug": "devops",
   "features": ["CI/CD", "Infrastructure as code", "Cloud-native practices"],
-  "specialist": "Laszlo",
+  "specialists": ["Laszlo Bacsi"],
   "description":
     "Our experts excel in implementing CI/CD, infrastructure as code, and cloud-native practices. We take a holistic approach to software delivery, addressing security, automation, compliance, QA, and more for a comprehensive market-ready solution.",
   "imageUrl":
@@ -71,7 +71,7 @@
   "name": "UX/UI Design",
   "slug": "ux-ui-design",
   "features": ["User research", "Wireframing", "Prototyping", "Usability testing"],
-  "specialist": "Luisa",
+  "specialists": ["Luisa Kinas"],
   "description":
     "We help you learn more about your users and explore possible competitors and discover market gaps. We completely design your product. Our design team creates code-ready design, speeding up the technological implementation.",
   "imageUrl":

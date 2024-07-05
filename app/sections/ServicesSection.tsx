@@ -24,7 +24,7 @@ export default function ServicesSection() {
 	return (
 		<section id="services" className="max-w-7xl w-full flex flex-col gap-6">
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
-				<p className="header">How can we help you?</p>
+				<p className="header lg:mx-auto">How can we help you?</p>
 				<div className="flex gap-4 lg:hidden">
 					<button aria-label="Scroll left button" onClick={scrollLeft}>
 						<ChevronLeftIcon className="h-6 w-6" />
@@ -38,13 +38,13 @@ export default function ServicesSection() {
 				<div
 					ref={servicesRef}
 					// style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
-					className="flex lg:grid grid-cols-4 gap-4 lg:gap-8 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
+					className="flex lg:grid grid-cols-4 gap-4 lg:gap-8 w-full overflow-x-visible snap-x snap-center snap-mandatory overflow-y-visible"
 				>
 					{services.map((feature) => (
 						<Link
 							href={`/services/${feature.slug}`}
 							key={feature.name}
-							className="snap-center relative rounded-xl gallery-photo overflow-hidden min-w-[80vw] lg:min-w-[13rem] h-[33rem] lg:h-[30svh] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="snap-center card relative rounded-xl gallery-photo overflow-hidden min-w-[80vw] lg:min-w-[13rem] h-[33rem] lg:h-[30svh] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image
 								src={feature.imageUrl}

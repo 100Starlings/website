@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 	if (!currentMember) {
 		return (
 			<div className="w-full min-h-[90svh] flex flex-col justify-center items-center">
-				<h1 className="header">member not found</h1>
+				<h1 className="header">Member not found</h1>
 				<Link href="/" className="button mt-[1rem]">
 					Go to homepage
 				</Link>

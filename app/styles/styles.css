@@ -23,12 +23,18 @@
 }
 
 .button.dark {
-  @apply px-4 py-1.5 bg-[--text-darker] border-[1px] text-[--bg-color] border-[var(--text-darker)] hover:bg-white/60 hover:text-black;
+  @apply px-4 py-1.5 bg-green border-[1px] text-white border-green hover:bg-green/80  hover:border-green;
 }
+
+
 
 .card {
   @apply bg-[--card-bg] rounded-xl overflow-hidden;
-  box-shadow: rgba(0, 0, 0, 1%) 0px 0px 1rem 0px;
+  box-shadow: rgba(0, 0, 0, 10%) 2px 4px 12px;
+}
+
+.shadow {
+ box-shadow: rgba(0, 0, 0, 10%) 2px 4px 12px;
 }
 
 .card:hover {

@@ -56,7 +56,7 @@ export default function OurTeamSection() {
 					className="flex gap-6 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
 				>
 					{activeTeamMembers.map(({ id, first_name, last_name, title, description, image_url }) => (
-						<Link href={`/team/${first_name}-${last_name}`} key={id}>
+						<Link href={`/team/${first_name}-${last_name}`} key={id} className="overflow-visible">
 							<TeamCard
 								key={id}
 								id={id}

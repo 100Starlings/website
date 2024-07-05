@@ -71,7 +71,7 @@ export default function ProjectsSection() {
 					</button>
 				</div>
 			</div>
-			<div className="w-full overflow-visible">
+			<div className="w-full overflow-x-visible">
 				<div
 					ref={projectsRef}
 					style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
 						<Link
 							href={project.websiteUrl}
 							key={project.name}
-							className="relative card rounded-lg gallery-photo overflow-hidden min-w-[80vw] lg:min-w-[50rem] h-[33svh] lg:h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+							className="relative shadow rounded-lg gallery-photo overflow-hidden min-w-[80vw] lg:min-w-[50rem] h-[33svh] lg:h-[33rem] bg-black hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 						>
 							<Image src={project.imageURL} alt="hero" fill style={{ objectFit: "cover", zIndex: "0" }} />
 							<div className="w-full h-full backdrop-blur-none bg-gradient-to-b from-black/0 to-black/60 p-6 text-gray-50 absolute z-0 flex items-end rounded-md">

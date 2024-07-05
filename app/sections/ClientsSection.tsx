@@ -90,7 +90,7 @@ const clients = [
 export default function ClientsSection() {
 	return (
 		<section className="flex flex-col w-full justify-between items-start gap-[2rem] max-w-7xl">
-			<p className="header pb-4">Members of our team have worked with</p>
+			<p className="header pb-4 mx-auto">Members of our team have worked with</p>
 			<div className="w-full flex flex-row justify-center">
 				<div className="w-full flex flex-row flex-wrap items-center justify-center gap-[2rem]">
 					{clients.map((client, index) => (
