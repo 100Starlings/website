@@ -1,13 +1,12 @@
 "use client";
 
-import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import services from "@/data/offeredServices.json";
 
 export default function ServicesSection() {
-	//  scroll the services section left and right by 300px when the left and right arrows are clicked
 	const servicesRef = React.useRef<HTMLDivElement>(null);
 
 	const scrollLeft = () => {
@@ -37,7 +36,6 @@ export default function ServicesSection() {
 			<div className="w-full overflow-x-visible">
 				<div
 					ref={servicesRef}
-					// style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
 					className="flex lg:grid grid-cols-4 gap-4 lg:gap-8 w-full overflow-x-visible snap-x snap-center snap-mandatory overflow-y-visible"
 				>
 					{services.map((feature) => (
