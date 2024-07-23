@@ -42,8 +42,11 @@ export default function Page({ params }: { params: { slug: string } }) {
 				{/* <p className="header">Our Services</p> */}
 				<ul className="flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">
 					{currentService.features.map((feature, index) => (
-						<li key={index} className="flex gap-2 text card w-full p-[2rem]">
-							<CheckCircleIcon width={24} /> {feature}
+						<li key={index} className="flex gap-2 text card w-full p-[2rem] ">
+							<p className="text-green">
+								<CheckCircleIcon width={24} />
+							</p>
+							{feature}
 						</li>
 					))}
 				</ul>

@@ -41,7 +41,7 @@ export default function ServicesSection() {
 					<Link
 						href={`/services/${feature.slug}`}
 						key={feature.name}
-						className="snap-center rounded-xl gallery-photo overflow-scroll min-w-[20rem] lg:min-w-full h-auto bg-[--card-bg] hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+						className="snap-center rounded-xl hover:bg-[--card-bg-60] border-2 border-transparent  hover:border-2 hover:border-green min-w-[20rem] lg:min-w-full h-auto bg-[--card-bg] hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 					>
 						<div className="w-full h-full backdrop-blur-none p-6 z-0 flex flex-col gap-2 items-start text-left">
 							<CheckCircleIcon className="text-green h-8" />
