@@ -38,7 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</div>
 			</div>
 
-			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-hidden">
+			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-show">
 				{/* <p className="header">Our Services</p> */}
 				<ul className="flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">
 					{currentService.features.map((feature, index) => (

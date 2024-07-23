@@ -57,17 +57,16 @@ export default function Page({ params }: { params: { slug: string } }) {
 								<Image src="/icons/Mail-icon.svg" width={28} height={26} alt="Email icon" />
 								<p className="mt-auto text-xs text-white/90">mail</p>
 							</a>
-							{currentMember?.calendar && (
-								<a
-									href={currentMember?.calendar}
-									target="_blank"
-									rel="noreferrer"
-									className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
-								>
-									<Image src="/icons/Calendar-icon.svg" width={26} height={26} alt="Calendar icon" />
-									<p className="mt-auto text-xs text-white/90">book</p>
-								</a>
-							)}
+
+							<a
+								href={currentMember?.calendar || "/#contact"}
+								target="_blank"
+								rel="noreferrer"
+								className="px-[2rem] py-[1rem] bg-[#333333]/50 backdrop-blur-xl rounded-md hover:bg-[#333333]/80 items-center justify-center flex flex-col"
+							>
+								<Image src="/icons/Calendar-icon.svg" width={26} height={26} alt="Calendar icon" />
+								<p className="mt-auto text-xs text-white/90">book</p>
+							</a>
 						</div>
 					</div>
 				</div>

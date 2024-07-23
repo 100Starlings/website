@@ -2,7 +2,7 @@
   "name": "Web Development",
   "slug": "web-development",
   "features": ["Solution design", "Frontend development", "Backend development"],
-  "specialists": ["Lajos Jablonszky", "Alex Stubbs"],
+  "specialists": ["Lajos Jablonszky"],
   "description":
     "From simple landing pages to complex web applications, we build custom solutions that are tailored to your unique business needs.",
   "imageUrl":
