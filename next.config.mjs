@@ -10,6 +10,7 @@ const nextConfig = {
 			"cdn.worldvectorlogo.com",
 			"sp-ao.shortpixel.ai",
 			"plus.unsplash.com",
+			"media.istockphoto.com",
 		],
 	},
 };

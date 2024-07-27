@@ -9,13 +9,13 @@ export default function HeroSection() {
 			className="flex relative mb-[6rem] w-full flex-col card items-center justify-center min-h-[72svh] rounded-md overflow-hidden"
 		>
 			<Image
-				src="https://images.unsplash.com/photo-1570342457566-0002e712eda3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				src="https://images.unsplash.com/photo-1641912076734-626a72927483?q=80&w=2855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 				layout="fill"
 				objectFit="cover"
 				objectPosition="center"
 				alt="hero"
 				loading="eager"
-				className="image"
+				className="image grayscale-100"
 			/>
 			<div className="flex text-white flex-col items-center w-full justify-center flex-grow  backdrop-blur-none bg-black/30">
 				<div className="z-10 flex items-center text-center text-[2rem] md:text-[4rem] lg:text-[4rem] tracking-[0.1rem] leading-tight">

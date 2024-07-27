@@ -8,7 +8,7 @@ export default function ProductSection() {
 			<div className="relative w-full min-w-[50%] min-h-[40svh] bg-white/10 bg-gradient-to-tr from-green/40 to-blue/20 rounded-xl overflow-hidden">
 				<div className="absolute w-full h-full rounded-xl z-0 bg-black/60">
 					<Image
-						src="https://images.unsplash.com/photo-1596387451312-ba03febbbbe5?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						src="https://images.unsplash.com/photo-1631477076110-2b8c1fe0f3cc?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt="hero"
 						fill
 						style={{ objectFit: "cover", zIndex: "0" }}
