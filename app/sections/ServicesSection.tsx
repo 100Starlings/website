@@ -45,8 +45,8 @@ export default function ServicesSection() {
 					>
 						<div className="w-full h-full backdrop-blur-none p-6 z-0 flex flex-col gap-2 items-start text-left">
 							<CheckCircleIcon className="text-green h-8" />
-							<p className="font-semibold text-xl">{feature.name}</p>
-							<p className="">
+							<p className="text-bold">{feature.name}</p>
+							<p className="text">
 								{feature.description.length > 80 ? `${feature.description.substring(0, 80)}...` : feature.description}
 							</p>
 							<p className="flex text-green text-sm">
