@@ -6,7 +6,7 @@
   "description":
     "From simple landing pages to complex web applications, we build custom solutions that are tailored to your unique business needs.",
   "imageUrl":
-    "/images/services/abstract-4.png"
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
 },
 {
   "name": "Full Project Delivery",
@@ -16,7 +16,7 @@
   "description":
     "You will get a dedicated team to take care of the full product delivery. We design, we code, and we ship your application.",
   "imageUrl":
-    "/images/services/abstract-6.png"
+    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
   "name": "App Development",
@@ -25,7 +25,7 @@
   "specialists": ["Richie Viteri"],
   "description": "From iOS to Android, we build mobile applications that are tailored to your unique business needs.",
   "imageUrl":
-    "/images/services/abstract-3.png"
+    "https://images.unsplash.com/photo-1542641728-6ca359b085f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80"
 },
 {
   "name": "Team Extension",
@@ -35,7 +35,7 @@
   "description":
     "Gain competitive advantige by leveraging a specialized team tailored to meet your unique business requirements. We provide our best developers, consultants who work as part of your team.",
   "imageUrl":
-    "/images/services/abstract-1.png"
+    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2084&q=80"
 },
 {
   "name": "MVP for Startups",
@@ -45,7 +45,7 @@
   "description":
     "Using our startup experience, we design and build your MVP so you can test your business concept with a real product.",
   "imageUrl":
-    "/images/services/abstract-5.png"
+    "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
 },
 {
   "name": "Consulting",
@@ -55,7 +55,7 @@
   "description":
     "We understand technology and development, enabling your business to focus on its core strengths. Whether it's selecting the right platform, programming language, or enhancing your existing website, our consultants are here to help.",
   "imageUrl":
-    "/images/services/abstract-2.png"
+    "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
 },
 {
   "name": "DevOps",
@@ -65,7 +65,7 @@
   "description":
     "Our experts excel in implementing CI/CD, infrastructure as code, and cloud-native practices. We take a holistic approach to software delivery, addressing security, automation, compliance, QA, and more for a comprehensive market-ready solution.",
   "imageUrl":
-    "/images/services/abstract-7.png"
+    "https://plus.unsplash.com/premium_photo-1690303193725-e3a9c08cfca4?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
   "name": "UX/UI Design",
@@ -75,5 +75,5 @@
   "description":
     "We help you learn more about your users and explore possible competitors and discover market gaps. We completely design your product. Our design team creates code-ready design, speeding up the technological implementation.",
   "imageUrl":
-    "/images/services/abstract-8.png"
+    "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
 }]
