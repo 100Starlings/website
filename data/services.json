@@ -4,7 +4,7 @@
     "name": "Web Applications",
     "slug": "web-applications",
     "description":
-      "If you require a cutom web app or a website for your business, we can help. Our team of experts will work closely with you to understand your requirements and deliver a solution that meets your expectations.",
+      "If you require a custom web app or a website for your business, we can help. Our team of experts will work closely with you to understand your requirements and deliver a solution that meets your expectations.",
     "list": ["UI/UX Design","Solution design", "Development", "Data & Integrations", "Testing & QA", "Support & Maintenance"]
   },
   {
@@ -25,7 +25,7 @@
     "name": "API Development",
     "slug": "api-development",
     "description":
-      "We can develpe cutom APIs for your business to help you integrate with other systems and applications. We can also help you integrate with third-party APIs to enhance your existing applications.",
+      "We can develop custom APIs for your business to help you integrate with other systems and applications. We can also help you integrate with third-party APIs to enhance your existing applications.",
     "list": ["Solution design", "Development", "Integration & Testing", "Support & Maintenance"]
   }
 ],
@@ -33,7 +33,7 @@
   {
     "name": "Project & Product Management",
     "slug": "product-and-product-management",
-    "description": "Our team specializes in effective Project Management and strategic Product Management. Whether you're looking to streamline your projects or enhance your product strategy, we have the skills and expertise to bring your vision to life. From Website Development to API Development, we deliver solutions that exceed your expectations.",
+    "description": "Our team specializes in effective and strategic Product Management. Whether you're looking to streamline your projects or enhance your product strategy, we have the skills and expertise to bring your vision to life. From website development to API development, we deliver solutions that meet your expectations.",
     "list": [
       "Helping you define project scope, goals, and objectives",
       "Establishing clear project timelines, milestones, and deliverables",
@@ -69,7 +69,7 @@
   {
     "name": "Strategy & Planning",
     "slug": "strategy-and-planning",
-    "description": "Whether you require strategic planning or business strategy development, our team has the expertise to bring your vision to life. We work closely with you to understand your requirements, delivering solutions in Web Applications, Mobile Applications, Website Development, and API Development that exceed your expectations.",
+    "description": "Whether you require strategic planning or business strategy development, our team has the expertise to bring your vision to life. We work closely with you to understand your requirements, delivering solutions in Web Applications, Mobile Applications, Website Development, and API Development that meet your expectations.",
     "list": [
       "Developing a clear understanding of your business goals and objectives",
       "Conducting market research and analysis to identify opportunities and threats",

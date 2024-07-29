@@ -2,7 +2,7 @@
   "name": "Web Development",
   "slug": "web-development",
   "features": ["Solution design", "Frontend development", "Backend development"],
-  "specialists": ["Lajos Jablonszky"],
+  "specialists": ["Alex Stubbs", "Riccardo Cambiassi"],
   "description":
     "From simple landing pages to complex web applications, we build custom solutions that are tailored to your unique business needs.",
   "imageUrl":
@@ -12,9 +12,9 @@
   "name": "Full Project Delivery",
   "slug": "full-project-delivery",
   "features": ["Project management", "Design", "Development", "Testing"],
-  "specialists": ["Alex Stubbs"],
+  "specialists": ["Alex Stubbs", "Riccardo Cambiassi"],
   "description":
-    "You will get a dedicated team to take care of the full product delivery. We design, we code, and we ship your application.",
+    "You will get a dedicated team to take care of full product delivery. We design, code and ship your application.",
   "imageUrl":
     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
@@ -33,7 +33,7 @@
   "features": ["Development", "Consulting", "Support"],
   "specialists": ["Alex Stubbs"],
   "description":
-    "Gain competitive advantige by leveraging a specialized team tailored to meet your unique business requirements. We provide our best developers, consultants who work as part of your team.",
+    "Gain competitive advantage by leveraging a specialized team tailored to meet your unique business requirements. We provide our best developers and consultants who work as part of your team.",
   "imageUrl":
     "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2084&q=80"
 },
@@ -43,14 +43,14 @@
   "features": ["Solution design", "Development", "Testing"],
   "specialists": ["Alex Stubbs"],
   "description":
-    "Using our startup experience, we design and build your MVP so you can test your business concept with a real product.",
+    "Using our startup experience, we design and build your MVP so you can test your business concept.",
   "imageUrl":
     "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
 },
 {
   "name": "Consulting",
   "slug": "consulting",
-  "features": ["Solution design", "DevOps", "Arhitecture", "QA", "Security"],
+  "features": ["Solution design", "DevOps", "Architecture", "QA", "Security"],
   "specialists": ["Alex Stubbs", "Riccardo Cambiassi"],
   "description":
     "We understand technology and development, enabling your business to focus on its core strengths. Whether it's selecting the right platform, programming language, or enhancing your existing website, our consultants are here to help.",
@@ -63,7 +63,7 @@
   "features": ["CI/CD", "Infrastructure as code", "Cloud-native practices"],
   "specialists": ["Laszlo Bacsi"],
   "description":
-    "Our experts excel in implementing CI/CD, infrastructure as code, and cloud-native practices. We take a holistic approach to software delivery, addressing security, automation, compliance, QA, and more for a comprehensive market-ready solution.",
+    "Our experts excel in implementing CI/CD, infrastructure as code, and cloud-native practices. We take a holistic approach to software delivery, addressing security, automation, compliance, QA and more.",
   "imageUrl":
     "https://plus.unsplash.com/premium_photo-1690303193725-e3a9c08cfca4?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
@@ -72,8 +72,7 @@
   "slug": "ux-ui-design",
   "features": ["User research", "Wireframing", "Prototyping", "Usability testing"],
   "specialists": ["Luisa Kinas"],
-  "description":
-    "We help you learn more about your users and explore possible competitors and discover market gaps. We completely design your product. Our design team creates code-ready design, speeding up the technological implementation.",
+  "description": "We help you understand your users, analyze your competitors, and identify market opportunities. Our design team focuses on both technical aspects and user-centric principles, creating designs that are ready for implementation, ensuring a faster and more efficient delivery process.",
   "imageUrl":
     "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
 }]
