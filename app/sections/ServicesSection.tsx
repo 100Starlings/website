@@ -35,18 +35,18 @@ export default function ServicesSection() {
 			</div>
 			<div
 				ref={servicesRef}
-				className="flex lg:grid grid-cols-4 gap-4 lg:gap-8 w-full overflow-x-scroll snap-x snap-center snap-mandatory"
+				className="flex lg:grid lg:grid-cols-4 gap-4 lg:gap-8 lg:overflow-visible pb-3 w-full overflow-auto snap-x snap-center snap-mandatory"
 			>
 				{services.map((feature) => (
 					<Link
 						href={`/services/${feature.slug}`}
 						key={feature.name}
-						className="snap-center rounded-xl hover:bg-[--card-bg-60] border-2 border-transparent  hover:border-2 hover:border-green min-w-[20rem] lg:min-w-full h-auto bg-[--card-bg] hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
+						className="snap-center shadow rounded-xl hover:bg-[--card-bg-60] border-2 border-transparent  hover:border-2 hover:border-green min-w-[20rem] lg:min-w-full h-auto bg-[--card-bg] hover:backdrop-blur-4xl p-0 flex flex-col gap-3"
 					>
 						<div className="w-full h-full backdrop-blur-none p-6 z-0 flex flex-col gap-2 items-start text-left">
 							<CheckCircleIcon className="text-green h-8" />
-							<p className="font-semibold text-xl text-white/100">{feature.name}</p>
-							<p className="text-white/80">
+							<p className="font-semibold text-xl">{feature.name}</p>
+							<p className="">
 								{feature.description.length > 80 ? `${feature.description.substring(0, 80)}...` : feature.description}
 							</p>
 							<p className="flex text-green text-sm">
