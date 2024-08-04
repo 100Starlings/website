@@ -1,27 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BackgroundImage from "../../public/rubyblok_green_logo 1.svg"
+import BackgroundImage from "../../public/rubyblok_green_logo 1.svg";
 
 export default function ProductSection() {
 	return (
 		<section id="product" className="flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]">
 			<div className="relative w-full min-w-[50%] min-h-[40svh] bg-white/10 bg-gradient-to-tr from-green/40 to-blue/20 rounded-xl overflow-hidden">
-				<div className="absolute w-full h-full rounded-xl z-0 bg-black/60">
-				</div>
+				<div className="absolute w-full h-full rounded-xl z-0 bg-black/60"></div>
 				<div className="rounded-xl">
 					<Image
-						src={BackgroundImage}
-						className="rounded-xl overflow-hidden mx-auto card-img-max-width"
+						src="https://images.unsplash.com/photo-1631477076110-2b8c1fe0f3cc?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						fill
+						style={{ objectFit: "cover", zIndex: "0" }}
+						className="image"
 						layout="fill"
 						objectPosition="center"
 						objectFit="contain"
 						alt="Rubyblok"
 					/>
 				</div>
+				<Image
+					src="/images/projects/rubyblok-boilerplate.png"
+					className="rounded-xl overflow-hidden mx-auto card-img-max-width"
+					layout="fill"
+					objectPosition="center"
+					objectFit="contain"
+					alt="Image of the team"
+				/>
 			</div>
 			<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
-				<p className="header">Meet Rubyblok: <br /> our open-source gem for headless CMS integration with Rails</p>
+				<p className="header">
+					Meet Rubyblok: <br /> our open-source gem for headless CMS integration with Rails
+				</p>
 				<p className="text">
 					Discover how we helped a client to enhance their content management with
 					<Link href="https://www.rubyblok.com/" target="_blank" rel="noopener noreferrer">

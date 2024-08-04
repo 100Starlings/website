@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BackgroundImage from "../../public/images/background/texture-hero.jpeg"
+import BackgroundImage from "../../public/images/background/texture-hero.jpeg";
 
 export default function HeroSection() {
 	return (
@@ -10,7 +10,7 @@ export default function HeroSection() {
 			className="relative flex flex-col items-center justify-center w-full min-h-[72svh] mb-[6rem] overflow-hidden rounded-md card"
 		>
 			<Image
-				src={BackgroundImage}
+				src="https://images.unsplash.com/photo-1641912076734-626a72927483?q=80&w=2855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 				layout="fill"
 				objectFit="cover"
 				objectPosition="center"
@@ -26,7 +26,8 @@ export default function HeroSection() {
 					<h1 className="font-bold">DIGITAL SOLUTIONS</h1>
 				</div>
 				<p className="z-10 mt-3 px-10 text-center text-sm lg:px-0 lg:text-md max-w-lg font-light">
-					We are a dynamic team of technical experts, dedicated to transforming business challenges into efficient custom digital solutions.
+					We are a dynamic team of technical experts, dedicated to transforming business challenges into efficient
+					custom digital solutions.
 				</p>
 
 				<Link href="/#services" className="z-10 flex gap-6 mt-8">
