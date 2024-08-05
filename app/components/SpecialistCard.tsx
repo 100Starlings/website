@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function SpecialistCard(secialistdata: any) {
@@ -20,9 +21,9 @@ export default function SpecialistCard(secialistdata: any) {
 				<div>
 					<p className="text">Solve your problems with 1-1 guidance</p>
 					<p className="font-light mb-6">Schedule a 30min call with our specialist</p>
-					<a href={secialistdata.data.calendar || "/#contact"} className="button dark">
+					<Link href={secialistdata.data.calendar || "/#contact"} className="button dark">
 						Book a session
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>
