@@ -10,7 +10,7 @@ export default function Specialistx(specialist: any) {
 	};
 
 	return (
-		<div className="flex w-full">
+		<div className="flex flex-col lg:flex-row w-full h-auto">
 			<div className="relative w-full min-w-[50%] min-h-[40svh]">
 				<Image
 					src={specialist.data.image_url || ""}
@@ -20,7 +20,7 @@ export default function Specialistx(specialist: any) {
 					style={{ objectFit: "cover" }}
 				/>
 			</div>
-			<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
+			<div className="flex gap-3 lg:gap-6 flex-col w-full h-full p-4 lg:p-[4rem] justify-center my-auto">
 				<p className="header">Meet {specialist.data.first_name},</p>
 				<p className="text">{specialist.description}</p>
 
