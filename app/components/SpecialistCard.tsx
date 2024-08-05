@@ -1,9 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
 import React from "react";
 
 export default function SpecialistCard(secialistdata: any) {
-	console.log(secialistdata.data);
+	const router = useRouter(); // Initialize useRouter
+
+	const handleNavigation = () => {
+		router.push(secialistdata.data.calendar || "/#contact");
+	};
+
 	return (
 		<div className="flex">
 			<div className="relative w-full min-w-[50%] min-h-[40svh]">
@@ -21,9 +26,9 @@ export default function SpecialistCard(secialistdata: any) {
 				<div>
 					<p className="text">Solve your problems with 1-1 guidance</p>
 					<p className="font-light mb-6">Schedule a 30min call with our specialist</p>
-					<Link href={secialistdata.data.calendar || "/#contact"} className="button dark">
+					<button onClick={handleNavigation} className="button dark">
 						Book a session
-					</Link>
+					</button>
 				</div>
 			</div>
 		</div>
