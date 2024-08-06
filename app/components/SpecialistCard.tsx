@@ -5,10 +5,6 @@ import React from "react";
 export default function Specialistx(specialist: any) {
 	const router = useRouter(); // Initialize useRouter
 
-	const handleNavigation = () => {
-		router.push(specialist.data.calendar || "/#contact");
-	};
-
 	return (
 		<div className="flex flex-col lg:flex-row w-full h-auto">
 			<div className="relative w-full min-w-[50%] min-h-[40svh]">
@@ -27,7 +23,18 @@ export default function Specialistx(specialist: any) {
 				<div>
 					<p className="text">Solve your problems with 1-1 guidance</p>
 					<p className="font-light mb-6">Schedule a 30min call with our specialist</p>
-					<button onClick={handleNavigation} className="button dark">
+					<button
+						onClick={(event) => {
+							event.preventDefault();
+							const url = specialist.data.calendar || `mailto:${specialist.data.email}`;
+							if (url.startsWith("mailto:")) {
+								window.location.href = url;
+							} else {
+								router.push(url);
+							}
+						}}
+						className="button dark"
+					>
 						Book a session
 					</button>
 				</div>
