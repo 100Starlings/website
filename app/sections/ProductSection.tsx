@@ -14,18 +14,12 @@ export default function ProductSection() {
 						fill
 						style={{ objectFit: "cover", zIndex: "0" }}
 						className="image"
-						layout="fill"
-						objectPosition="center"
-						objectFit="contain"
 						alt="Rubyblok"
 					/>
 				</div>
 				<Image
 					src="/images/projects/rubyblok-boilerplate.png"
 					className="rounded-xl overflow-hidden mx-auto card-img-max-width"
-					layout="fill"
-					objectPosition="center"
-					objectFit="contain"
 					alt="Image of the team"
 				/>
 			</div>

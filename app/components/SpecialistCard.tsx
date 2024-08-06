@@ -10,7 +10,7 @@ export default function Specialistx(specialist: any) {
 			<div className="relative w-full min-w-[50%] min-h-[40svh]">
 				<Image
 					src={specialist.data.image_url || ""}
-					className="rounded-xl"
+					className="rounded-xl bg-cover"
 					fill
 					alt="Image of the team"
 					style={{ objectFit: "cover" }}

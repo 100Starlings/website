@@ -11,9 +11,7 @@ export default function HeroSection() {
 		>
 			<Image
 				src="https://images.unsplash.com/photo-1641912076734-626a72927483?q=80&w=2855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				layout="fill"
-				objectFit="cover"
-				objectPosition="center"
+				fill
 				alt="hero"
 				loading="eager"
 				className="image grayscale-100"
