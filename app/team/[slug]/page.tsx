@@ -83,7 +83,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 									{currentMember?.expertise?.map(
 										(expertise: { [s: string]: unknown } | ArrayLike<unknown>, index: React.Key | null | undefined) =>
 											Object.entries(expertise).map(([title, items]) => (
-												<li className="w-full">
+												<li key={title} className="w-full">
 													<Dropdown title={title} items={Array.isArray(items) ? items : [items]} />
 												</li>
 											))
