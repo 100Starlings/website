@@ -48,7 +48,7 @@ export default function ContactSection() {
 				<div className="w-full min-w-[50%] relative flex flex-col justify-center overflow-hidden rounded-xl">
 					<div className="absolute w-full h-full rounded-xl z-0 bg-black">
 						<Image
-							src="https://images.unsplash.com/photo-1631477076114-9123f721b9dc?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							src={BackgroundImage}
 							alt="hero"
 							fill
 							style={{ objectFit: "cover", zIndex: "0" }}
