@@ -4,7 +4,6 @@ import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
-import Carousel from "@/app/components/Carousel/Carousel";
 
 export default function Page({ params }: { params: { slug: string } }) {
 	const currentService = services.find((service) => service.slug === params.slug);
@@ -38,8 +37,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 					</a>
 				</div>
 			</div>
-
-			<Carousel />
 
 			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-show">
 				<ul className="flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">

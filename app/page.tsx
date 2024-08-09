@@ -1,15 +1,13 @@
-import Image from "next/image";
+"use client"
 import HeroSection from "./sections/HeroSection";
-import Header from "./components/Header";
 import ServicesSection from "./sections/ServicesSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import AboutUsSection from "./sections/AboutUsSection";
 import OurTeamSection from "./sections/OurTeamSection";
 import ContactSection from "./sections/ContactSection";
 import ClientsSection from "./sections/ClientsSection";
-import PricingSection from "./sections/PricingSection";
-import Link from "next/link";
 import ProductSection from "./sections/ProductSection";
+import TestimonialSection from "./sections/TestimonialSection/TestimonialSection";
 import RecentClientsSection from "./sections/RecentClientsSection";
 
 export default function Home() {
@@ -22,8 +20,8 @@ export default function Home() {
 			<ProjectsSection />
 			<ClientsSection />
 			<ProductSection />
+			<TestimonialSection />
 			<OurTeamSection />
-			{/* <PricingSection /> */}
 			<ContactSection />
 		</main>
 	);
