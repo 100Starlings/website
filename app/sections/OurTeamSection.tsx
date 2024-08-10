@@ -37,7 +37,7 @@ export default function OurTeamSection() {
 	};
 
 	return (
-		<section id="services" className="w-full flex flex-col gap-6">
+		<section id="team" className="w-full flex flex-col gap-6">
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 				<p className="header">Meet the team</p>
 				<div className="flex gap-4">

@@ -1,7 +1,5 @@
 "use client";
-
 import { CheckCircleIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import services from "@/data/offeredServices.json";
@@ -23,7 +21,7 @@ export default function ServicesSection() {
 	return (
 		<section id="services" className="max-w-7xl w-full h-full flex flex-col gap-6">
 			<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
-				<p className="header lg:mx-auto">How can we help you?</p>
+				<p className="header lg:mx-auto sm:pb-4">How can we help you?</p>
 				<div className="flex gap-4 lg:hidden">
 					<button aria-label="Scroll left button" onClick={scrollLeft}>
 						<ChevronLeftIcon className="h-6 w-6" />

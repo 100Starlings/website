@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
@@ -12,7 +13,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 			currentService.specialists.includes(`${specialist.first_name} ${specialist.last_name}`)
 	);
 
-	// Handle case where service is not found
 	if (!currentService) {
 		return <div>Service not found</div>;
 	}
@@ -39,7 +39,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 			</div>
 
 			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-show">
-				{/* <p className="header">Our Services</p> */}
 				<ul className="flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">
 					{currentService.features.map((feature, index) => (
 						<li key={index} className="flex gap-2 text card w-full p-[2rem] ">
@@ -67,7 +66,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 						/>
 					</div>
 					<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
-						<p className="header">Meet {specialist.first_name}, our specialist</p>
+						<p className="header">Meet {specialist.first_name}, <br/> one of our specialists</p>
 						<p className="text">{specialist?.description}</p>
 						<div>
 							<p className="text">Solve your problems with 1-1 guidance</p>
