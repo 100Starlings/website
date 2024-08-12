@@ -65,7 +65,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 
 					<div id="section-content" className="sm:basis-7/12 p-6 sm:p-12">
-						<div className="my-6 sm:my-12">
+						<div className="my-8">
 							<p className="header mb-2">
 								Your business is unique
 							</p>

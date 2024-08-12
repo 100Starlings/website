@@ -30,18 +30,18 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 
   return (
     <div id="specialist-section">
-      <div className="flex items-center justify-left flex-row flex-wrap sm:flex-nowrap mb-4">
+      <div className="flex items-center justify-left flex-row flex-wrap sm:flex-nowrap">
         <div className="sm:basis-2/12">
           <Image
             src={currentSpecialists[currentIndex]?.image_url || ""}
             className="rounded-full"
             alt="Specialist"
-            width={65}
-            height={65}
+            width={80}
+            height={80}
           />
         </div>
 
-        <div className="sm:basis-11/12">
+        <div className="sm:basis-8/12">
           <p className="sm:text-md">Connect with {currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}</p>
           <p className="text-xs font-light text-justify">
             {truncateText(currentSpecialists[currentIndex]?.description || '', 190)}
@@ -51,12 +51,12 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
           </p>
         </div>
 
-        <button onClick={handleNext} aria-label="Next specialist" className="mt-3 sm:ml-4 sm:basis-4/12">
+        <button onClick={handleNext} aria-label="Next specialist" className="mt-3 sm:ml-4 sm:basis-2/12">
           <ArrowRightCircleIcon className="w-6 h-6 text-green hover:text-gray-700" />
         </button>
       </div>
 
-      <div id="cta-button-group" className="flex flex-row">
+      <div id="cta-button-group" className="flex flex-row my-8">
         <a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-6">
           Book a session
         </a>
