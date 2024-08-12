@@ -36,7 +36,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 						<h1 className="header large mb-[1rem]">{currentService.name}</h1>
 						<p className="text max-w-xl text-center px-4 lg:px-0">{currentService.description}</p>
 						<a href="#book" className="button mt-6">
-							Book a free session
+							Book a session
 						</a>
 					</div>
 				</div>
@@ -54,23 +54,23 @@ export default function Page({ params }: { params: { slug: string } }) {
 					</ul>
 				</div>
 
-				<div id="contact section" className="card flex items-center flex-row flex-wrap sm:flex-nowrap max-w-6xl mx-auto">
-					<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1 sm:max-w-xl">
+				<div id="contact section" className="card flex items-center justify-left flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto sm:h-[70vh]">
+					<div id="section-image" className="sm:basis-5/12 relative overflow-hidden sm:h-[70vh]">
 						<Image
 							src={Snowflake}
-							className="rounded-xl"
+							className="rounded-xl h-full w-auto object-cover"
 							alt="Snowflake"
 						/>
 					</div>
 
-					<div id="section-content" className="sm:basis-1/2 p-6 sm:p-12 max-w-lg">
-						<div className="my-5">
-							<p className="header my-4 sm:pt-4">
+
+					<div id="section-content" className="sm:basis-7/12 p-6 sm:p-12">
+						<div className="my-6 sm:my-12">
+							<p className="header mb-2">
 								Your business is unique
 							</p>
-
 							<p className="font-light text-justify">
-								and that's why we prefer to tailor our approach to meet your specific needs. 
+								and that's why we prefer to tailor our approach to meet your specific needs. <br/>
 								Let's explore how a collaborative partnership can drive the best results for you.
 							</p>
 						</div>
