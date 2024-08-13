@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 
 interface Specialist {
   first_name: string;
@@ -18,6 +18,12 @@ interface SpecialistDescriptionProps {
 const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSpecialists }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      (prevIndex - 1 + currentSpecialists.length) % currentSpecialists.length
+    );
+  };
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % currentSpecialists.length);
   };
@@ -29,42 +35,60 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
   };
 
   return (
-    <div id="specialist-section">
-      <div className="flex items-center justify-left flex-row flex-wrap sm:flex-nowrap">
-        <div className="sm:basis-2/12">
+    <div id="specialist-section" className="sm:basis-1/2 p-6 sm:p-12 max-w-lg">
+      <div id="intro-copy">
+        <p className="header my-4">
+          Your business is unique
+        </p>
+
+        <p className="font-light text-justify my-4">
+          and that's why we prefer to tailor our approach to meet your specific needs. 
+          Let's explore how a collaborative partnership can drive the best results for you.
+        </p>
+      </div>
+
+      <div id="specialist-profile" className="flex flex-row my-6 flex-wrap sm:flex-nowrap items-center">
+        <div className="ml-1 mr-3">
           <Image
             src={currentSpecialists[currentIndex]?.image_url || ""}
             className="rounded-full"
             alt="Specialist"
-            width={80}
-            height={80}
+            width={55}
+            height={55}
           />
         </div>
 
-        <div className="sm:basis-8/12">
-          <p className="sm:text-md">Connect with {currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}</p>
+        <div className="sm:basis-3/4">
+          <p className="text-md">Connect with {currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}</p>
           <p className="text-xs font-light text-justify">
-            {truncateText(currentSpecialists[currentIndex]?.description || '', 190)}
+            {truncateText(currentSpecialists[currentIndex]?.description || '', 90)}
             <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="text-green ml-2">
               Read more ›
             </a>
           </p>
         </div>
-
-        <button onClick={handleNext} aria-label="Next specialist" className="mt-3 sm:ml-4 sm:basis-2/12">
-          <ArrowRightCircleIcon className="w-6 h-6 text-green hover:text-gray-700" />
-        </button>
       </div>
 
-      <div id="cta-button-group" className="flex flex-row my-8">
-        <a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-6">
+      <div id="cta-button-group" className="flex flex-row mt-4">
+        <a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-3">
           Book a session
         </a>
 
-        <a href={"/#contact"} className="button">
+        <a href={"/#contact"} className="button light">
           Contact us
         </a>
       </div>
+
+      {currentSpecialists.length > 1 && (
+        <div id="slide-button-group" className="flex flex-row my-5 ml-1 items-center justify-left sm:justify-start">
+          <button onClick={handlePrevious} aria-label="Previous specialist">
+            <ArrowLeftCircleIcon className="w-6 h-6 text-slate-400 hover:text-slate-500 mr-3" />
+          </button>
+          <button onClick={handleNext} aria-label="Next specialist">
+            <ArrowRightCircleIcon className="w-6 h-6 text-slate-400 hover:text-slate-500" />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
