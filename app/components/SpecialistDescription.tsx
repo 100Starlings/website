@@ -48,7 +48,7 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
       </div>
 
       <div id="specialist-profile" className="flex flex-row my-6 flex-wrap sm:flex-nowrap items-center">
-        <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="sm:basis-2/12 ml-1 mr-3">
+        <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="sm:basis-2/12 ml-1 mr-3 mb-4 sm:mb-0">
           <Image
             src={currentSpecialists[currentIndex]?.image_url || ""}
             className="rounded-full"
