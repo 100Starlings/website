@@ -35,35 +35,35 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
   };
 
   return (
-    <div id="specialist-section" className="sm:basis-1/2 p-6 sm:p-12 max-w-lg">
+    <div id="specialist-section" className="sm:basis-1/2 p-6 sm:py-24 sm:px-12">
       <div id="intro-copy">
         <p className="header my-4">
           Your business is unique
         </p>
 
         <p className="font-light text-justify my-4">
-          and that's why we prefer to tailor our approach to meet your specific needs. 
-          Let's explore how a collaborative partnership can drive the best results for you.
+          and that's why we tailor our approach to meet your specific needs. <br/>
+          Let's explore how our collaboration can drive the best results for you.
         </p>
       </div>
 
       <div id="specialist-profile" className="flex flex-row my-6 flex-wrap sm:flex-nowrap items-center">
-        <div className="ml-1 mr-3">
+        <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="sm:basis-2/12 ml-1 mr-3">
           <Image
             src={currentSpecialists[currentIndex]?.image_url || ""}
             className="rounded-full"
             alt="Specialist"
-            width={55}
-            height={55}
+            width={80}
+            height={80}
           />
-        </div>
+        </a>
 
-        <div className="sm:basis-3/4">
+        <div className="sm:basis-9/12">
           <p className="text-md">Connect with {currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}</p>
-          <p className="text-xs font-light text-justify">
-            {truncateText(currentSpecialists[currentIndex]?.description || '', 90)}
-            <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="text-green ml-2">
-              Read more ›
+          <p className="text-xs text-justify font-light sm:mr-2">
+            {truncateText(currentSpecialists[currentIndex]?.description || '', 250)}
+            <a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="text-green ml-1">
+              More info ›
             </a>
           </p>
         </div>
