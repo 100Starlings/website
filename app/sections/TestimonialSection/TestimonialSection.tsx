@@ -42,7 +42,7 @@ const TestimonialSection = () => {
 				<div id="testimonial-section" className="flex items-center sm:basis-2/3 py-4 sm:p-8 mb-4 sm:mb-0 min-h-[25rem]">
 					<div className={`testimonial ${isVisible ? "visible" : ""}`}>
 						<p className="mb-[1rem] text-xl dark:text-white text-slate-600 font-extralight leading-relaxed">
-							"{testimonials[current].quote}"
+							&quot;{testimonials[current].quote}&quot;
 						</p>
 						<h3 className="font-bold text-lg">{testimonials[current].name}</h3>
 						<h4 className="text-slate-600 dark:text-white text-sm font-light mt-1">{testimonials[current].title}</h4>
