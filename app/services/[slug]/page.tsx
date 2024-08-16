@@ -4,22 +4,22 @@ import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
 import Snowflake from "@/public/images/snowflake.jpg";
-import SpecialistDescription from "@/app/components/SpecialistDescription"
+import SpecialistDescription from "@/app/components/SpecialistDescription";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const currentService = services.find((service) => service.slug === params.slug);
-  const currentSpecialists = specialists.filter(
-    (specialist) =>
-      currentService?.specialists &&
-      currentService.specialists.includes(`${specialist.first_name} ${specialist.last_name}`)
-  );
+	const currentService = services.find((service) => service.slug === params.slug);
+	const currentSpecialist = specialists.filter(
+		(specialist) =>
+			currentService?.specialists &&
+			currentService.specialists.includes(`${specialist.first_name} ${specialist.last_name}`)
+	);
 
 	if (!currentService) {
 		return <div>Service not found</div>;
 	}
 
-  return (
+	return (
 		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem] pt-[3.75rem]">
 			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-xl overflow-hidden">
 				<Image
@@ -53,16 +53,15 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</ul>
 			</div>
 
-			<div id="contact section" className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto">
+			<div
+				id="contact section"
+				className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
+			>
 				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
-					<Image
-						src={Snowflake}
-						className="rounded-xl"
-						alt="Snowflake"
-					/>
+					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
 				</div>
 
-				<SpecialistDescription currentSpecialists={currentSpecialists} />
+				<SpecialistDescription currentSpecialists={currentSpecialist} />
 			</div>
 		</div>
 	);
