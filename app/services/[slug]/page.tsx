@@ -3,11 +3,13 @@ import React from "react";
 import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
+import Snowflake from "@/public/images/snowflake.jpg";
+import SpecialistDescription from "@/app/components/SpecialistDescription";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Page({ params }: { params: { slug: string } }) {
 	const currentService = services.find((service) => service.slug === params.slug);
-	const currentSpecialists = specialists.filter(
+	const currentSpecialist = specialists.filter(
 		(specialist) =>
 			currentService?.specialists &&
 			currentService.specialists.includes(`${specialist.first_name} ${specialist.last_name}`)
@@ -33,7 +35,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 					<h1 className="header large mb-[1rem]">{currentService.name}</h1>
 					<p className="text max-w-xl text-center px-4 lg:px-0">{currentService.description}</p>
 					<a href="#book" className="button mt-6">
-						Book a free session
+						Book a session
 					</a>
 				</div>
 			</div>
@@ -50,34 +52,17 @@ export default function Page({ params }: { params: { slug: string } }) {
 					))}
 				</ul>
 			</div>
-			{currentSpecialists.map((specialist, index) => (
-				<div
-					key={index}
-					id="book"
-					className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl card overflow-hidden min-h-[40rem]"
-				>
-					<div className="relative w-full min-w-[50%] min-h-[40svh]">
-						<Image
-							src={specialist?.image_url || ""}
-							className="rounded-xl"
-							fill
-							alt="Image of the team"
-							style={{ objectFit: "cover" }}
-						/>
-					</div>
-					<div className="flex gap-6 flex-col w-full h-full p-8 lg:p-[4rem] justify-center my-auto">
-						<p className="header">Meet {specialist.first_name}, <br/> one of our specialists</p>
-						<p className="text">{specialist?.description}</p>
-						<div>
-							<p className="text">Solve your problems with 1-1 guidance</p>
-							<p className="font-light mb-6">Schedule a 30min call with our specialist</p>
-							<a href={specialist?.calendar || "/#contact"} className="button dark">
-								Book a session
-							</a>
-						</div>
-					</div>
+
+			<div
+				id="contact section"
+				className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
+			>
+				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
+					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
 				</div>
-			))}
+
+				<SpecialistDescription currentSpecialists={currentSpecialist} />
+			</div>
 		</div>
 	);
 }

@@ -7,13 +7,13 @@
         "email": "alex.stubbs@100starlings.com",
         "github": "https://github.com/alexstubbs",
         "phone": "+44759471595",
-        "description": "Alex started in the industry in 2004 after completing a MMath and MSci Computing, and has been known to wear multiple hats, from solution architect, team lead, project manager, agile coach, UX advisor, sounding board and delivery advisor. Focus on Ruby and friends, primarily web oriented.",
+        "description": "A co-founder with a strong background in Ruby on Rails development. Alex excels in every facet of digital project delivery, including team management, solution architecture, technical strategy, and user experience design.",
         "image_url": "/images/team/Alex.png",
         "linkedin": "https://www.linkedin.com/in/alexstubbs/",
         "calendar": "https://calendly.com/alex-stubbs",
         "expertise": [
           {
-            "Consultion": [
+            "Consultation": [
              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet libero ut odio lacinia tincidunt"
             ],
             "Solution Architecture": [
@@ -244,11 +244,11 @@
         "id": 17,
         "first_name": "Luisa",
         "last_name": "Kinas",
-        "title": "Web Developer",
+        "title": "UX Designer",
         "email": "luisa.kinas@100starlings.com",
         "github": "https://github.com/lkinas",
         "phone": "",
-        "description": "has over 4 years of experience in agile software development, mainly working with React front-end and Ruby on Rails back-end applications. Beyond her primary role, she has also collaborated in freelance projects as a UX Designer. Minimalist, analytical and collaborative are qualities which describe her.",
+        "description": "has over 5 years of experience in agile software development, first as a React front-end developer before transitioning to UX. She has also worked on freelance UX projects, known for her collaborative and technically-driven design approach.",
         "image_url": "/images/team/Luisa.png",
         "linkedin": "https://www.linkedin.com/in/lkinas/",
         "calendar": "",
