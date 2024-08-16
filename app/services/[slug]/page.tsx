@@ -50,7 +50,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 			setShowArrows(totalWidth > visibleWidth);
 		}
-	}, [currentService, currentExperts]);
+	}, [currentService]);
 
 	if (!currentService) {
 		return <div>Service not found</div>;

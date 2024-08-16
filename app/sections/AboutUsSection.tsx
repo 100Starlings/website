@@ -6,7 +6,7 @@ export default function AboutUsSection() {
 	return (
 		<section
 			id="about"
-			className="flex flex-col scroll-pt-[4rem] sm:flex-row-reverse w-full max-w-7xl card overflow-hidden min-h-[35rem]"
+			className="flex flex-col scroll-pt-[4rem] lg:flex-row-reverse w-full max-w-7xl card overflow-hidden min-h-[35rem]"
 		>
 			<div id="team-image" className="relative w-full min-w-[50%] min-h-[40svh] overflow-hidden rounded-xl">
 				<Image src={GroupImage} className="rounded-xl" alt="team-image" fill style={{ objectFit: "cover" }} />
