@@ -26,7 +26,7 @@ export default function AboutUsSection() {
 
 				<p className="text-md font-light text-slate-600 dark:text-white leading-loose">
 					Operating from the UK, Hungary and Brazil, we align our working hours with UK time zones. Known for our
-					reliability, we've often served as a trusted partner within integrated teams.
+					reliability, we&apos;ve often served as a trusted partner within integrated teams.
 				</p>
 			</div>
 		</section>

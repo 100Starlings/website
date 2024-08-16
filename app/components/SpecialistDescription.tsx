@@ -40,8 +40,8 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 				<p className="header my-4">Your business is unique</p>
 
 				<p className="font-light text-justify my-4">
-					and that's why we tailor our approach to meet your specific needs. <br />
-					Let's explore how our collaboration can drive the best results for you.
+					and that&apos;s why we tailor our approach to meet your specific needs. <br />
+					Let&apos;s explore how our collaboration can drive the best results for you.
 				</p>
 			</div>
 
