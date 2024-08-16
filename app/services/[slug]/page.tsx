@@ -78,6 +78,17 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</ul>
 			</div>
 
+			<div
+				id="contact section"
+				className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
+			>
+				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
+					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
+				</div>
+
+				<SpecialistDescription currentSpecialists={currentSpecialists} />
+			</div>
+
 			<div className="w-full overflow-x-visible flex flex-col gap-6">
 				<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 					<p className="text-lg lg:text-2xl">
@@ -94,6 +105,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 						</div>
 					)}
 				</div>
+
 				<div className="w-full overflow-x-visible">
 					<div
 						ref={membersRef}
@@ -116,16 +128,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 							))}
 					</div>
 				</div>
-			</div>
-			<div
-				id="contact section"
-				className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
-			>
-				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
-					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
-				</div>
-
-				<SpecialistDescription currentSpecialists={currentSpecialists} />
 			</div>
 		</div>
 	);
