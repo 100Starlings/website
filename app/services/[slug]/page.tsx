@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
@@ -12,33 +12,56 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function Page({ params }: { params: { slug: string } }) {
 	const membersRef = React.useRef<HTMLDivElement>(null);
+	const [showArrows, setShowArrows] = useState(false);
 
-	const currentService = services.find((service) => service.slug === params.slug) as {
-		name: string;
-		slug: string;
-		features: string[];
-		specialists: string[];
-		description: string;
-		imageUrl: string;
-		experts: string[];
-	};
-
-	const currentExperts = currentService?.experts
-		.map((expert) => {
-			const [first_name, last_name] = expert.split(" ");
-			return specialists.find(
-				(specialist) => specialist.first_name === first_name && specialist.last_name === last_name
-			);
-		})
-		.filter((expert) => expert !== undefined);
-
-	const currentSpecialists = specialists.filter((specialist) =>
-		currentService?.specialists.includes(`${specialist.first_name} ${specialist.last_name}`)
-	);
+	const currentService = services.find((service) => service.slug === params.slug);
 
 	if (!currentService) {
 		return <div>Service not found</div>;
 	}
+
+	const currentExperts = currentService.experts
+		.map((expert) => {
+			if (typeof expert === "string") {
+				const [first_name, last_name] = expert.split(" ");
+				return specialists.find(
+					(specialist) => specialist.first_name === first_name && specialist.last_name === last_name
+				);
+			} else if ("name" in expert) {
+				const [first_name, last_name] = expert.name.split(" ");
+				return specialists.find(
+					(specialist) => specialist.first_name === first_name && specialist.last_name === last_name
+				);
+			}
+			return undefined;
+		})
+		.filter((expert): expert is NonNullable<typeof expert> => expert !== undefined);
+
+	const currentSpecialists = currentService.specialists
+		.map((specialist) => {
+			if (typeof specialist === "string") {
+				const [first_name, last_name] = specialist.split(" ");
+				return specialists.find(
+					(specialist) => specialist.first_name === first_name && specialist.last_name === last_name
+				);
+			} else if ("name" in specialist) {
+				const [first_name, last_name] = specialist.name.split(" ");
+				return specialists.find(
+					(specialist) => specialist.first_name === first_name && specialist.last_name === last_name
+				);
+			}
+			return undefined;
+		})
+		.filter((specialist): specialist is NonNullable<typeof specialist> => specialist !== undefined);
+
+	useEffect(() => {
+		if (membersRef.current && currentExperts.length > 1) {
+			const totalWidth = membersRef.current.scrollWidth;
+			const visibleWidth = membersRef.current.clientWidth;
+
+			setShowArrows(totalWidth > visibleWidth);
+		}
+	}, [currentExperts]);
 
 	const scrollLeft = () => {
 		if (membersRef.current) {
@@ -68,7 +91,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 			<div className="mx-auto flex flex-col lg:flex-row w-full max-w-7xl overflow-show">
 				<ul className="flex flex-col lg:flex-row gap-[1.5rem] lg:gap-[3rem] justify-between w-full mx-auto">
 					{currentService.features.map((feature, index) => (
-						<li key={index} className="flex gap-2 text card w-full p-[2rem] ">
+						<li key={index} className="flex gap-2 text card w-full p-[2rem]">
 							<p className="text-green">
 								<CheckCircleIcon width={24} />
 							</p>
@@ -85,7 +108,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
 					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
 				</div>
-
 				<SpecialistDescription currentSpecialists={currentSpecialists} />
 			</div>
 
@@ -94,7 +116,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 					<p className="text-lg lg:text-2xl">
 						Our {currentService.name.toLowerCase()} {currentSpecialists.length > 1 ? "experts" : "expert"}
 					</p>
-					{currentSpecialists.length > 1 && (
+					{showArrows && (
 						<div className="flex gap-4">
 							<button aria-label="Scroll left button" onClick={scrollLeft}>
 								<ChevronLeftIcon className="h-8 w-8" />
@@ -112,20 +134,18 @@ export default function Page({ params }: { params: { slug: string } }) {
 						style={{ paddingInline: `max(0rem, calc((100vw - 83.5rem) / 2))` }}
 						className="flex gap-6 w-full overflow-x-auto snap-x snap-center snap-mandatory overflow-y-visible"
 					>
-						{currentExperts
-							?.filter((expert): expert is NonNullable<typeof expert> => expert !== undefined)
-							.map(({ id, first_name, last_name, title, description, image_url }) => (
-								<Link href={`/team/${first_name}-${last_name}`} key={id} className="overflow-visible">
-									<TeamCard
-										id={id}
-										first_name={first_name}
-										last_name={last_name}
-										title={title}
-										description={description}
-										image_url={image_url}
-									/>
-								</Link>
-							))}
+						{currentExperts.map(({ id, first_name, last_name, title, description, image_url }) => (
+							<Link href={`/team/${first_name}-${last_name}`} key={id} className="overflow-visible">
+								<TeamCard
+									id={id}
+									first_name={first_name}
+									last_name={last_name}
+									title={title}
+									description={description}
+									image_url={image_url}
+								/>
+							</Link>
+						))}
 					</div>
 				</div>
 			</div>
