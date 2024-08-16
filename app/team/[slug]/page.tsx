@@ -79,11 +79,11 @@ export default function Page({ params }: { params: { slug: string } }) {
 						{currentMember?.expertise && (
 							<>
 								<h2 className="header mb-2">Expertise</h2>
-								<ul className="grid grid-cols-1 divide-y divide-[--devider] w-full max-w-xl">
+								<ul className="grid grid-cols-1 divide-[--devider] divide-y-[0.5px] w-full max-w-xl">
 									{currentMember?.expertise?.map(
 										(expertise: { [s: string]: unknown } | ArrayLike<unknown>, index: React.Key | null | undefined) =>
 											Object.entries(expertise).map(([title, items]) => (
-												<li key={index} className="w-full">
+												<li key={title} className="w-full">
 													<Dropdown title={title} items={Array.isArray(items) ? items : [items]} />
 												</li>
 											))

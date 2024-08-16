@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BackgroundImage from "../../public/images/background/texture-hero.jpeg"
+import BackgroundImage from "../../public/images/background/texture-hero.jpeg";
 
 export default function HeroSection() {
 	return (
@@ -9,15 +9,7 @@ export default function HeroSection() {
 			id="/"
 			className="relative flex flex-col items-center justify-center w-full min-h-[72svh] mb-[6rem] overflow-hidden rounded-md card"
 		>
-			<Image
-				src={BackgroundImage}
-				layout="fill"
-				objectFit="cover"
-				objectPosition="center"
-				alt="hero"
-				loading="eager"
-				className="image grayscale-100"
-			/>
+			<Image src={BackgroundImage} fill alt="hero" loading="eager" className="image grayscale-100" />
 			<div className="flex flex-col items-center justify-center w-full flex-grow text-white bg-black/30 backdrop-blur-none">
 				<div className="z-10 flex items-center text-center text-[1.5rem] lg:text-[4rem] tracking-[0.1rem] leading-tight">
 					<h1 className="">CRAFTING CUSTOM</h1>
@@ -26,7 +18,8 @@ export default function HeroSection() {
 					<h1 className="font-bold">DIGITAL SOLUTIONS</h1>
 				</div>
 				<p className="z-10 mt-3 px-10 text-center text-sm lg:px-0 lg:text-md max-w-lg font-light">
-					We are a dynamic team of technical experts, dedicated to transforming business challenges into efficient custom digital solutions.
+					We are a dynamic team of technical experts, dedicated to transforming business challenges into efficient
+					custom digital solutions.
 				</p>
 
 				<Link href="/#services" className="z-10 flex gap-6 mt-8">

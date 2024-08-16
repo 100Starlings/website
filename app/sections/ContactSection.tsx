@@ -2,7 +2,7 @@ import { BuildingOffice2Icon } from "@heroicons/react/20/solid";
 import { EnvelopeIcon, IdentificationIcon } from "@heroicons/react/24/outline";
 import EmailContactForm from "../components/EmailContactForm";
 import Image from "next/image";
-import BackgroundImage from "../../public/images/background/texture-contact.jpeg"
+import BackgroundImage from "../../public/images/background/texture-contact.jpeg";
 
 export default function ContactSection() {
 	return (
@@ -11,8 +11,8 @@ export default function ContactSection() {
 				<div className="flex gap-6 flex-col w-full min-h-[100%] p-8 lg:p-[4rem] justify-center my-auto">
 					<p className="header"> Let&apos;s solve your challenges</p>
 					<p className="text mb-10">
-					Connect with us and explore how we can collaborate. <br />
-					One of our team members will be in touch to discuss your needs and how we can help.
+						Connect with us and explore how we can collaborate. <br />
+						One of our team members will be in touch to discuss your needs and how we can help.
 					</p>
 					<div className="text-[--text-darker]">
 						<div className="flex gap-4 items-center mb-[1.25rem]">
@@ -52,7 +52,7 @@ export default function ContactSection() {
 							alt="hero"
 							fill
 							style={{ objectFit: "cover", zIndex: "0" }}
-							className="image"
+							className="image grayscale-0 opacity-40"
 						/>
 					</div>
 					<EmailContactForm />

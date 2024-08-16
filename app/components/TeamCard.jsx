@@ -19,7 +19,6 @@ export default function TeamCard({ id, first_name, last_name, title, description
 			onMouseLeave={() => {
 				showDescText(false);
 			}}
-			passHref
 			key={id}
 			className="min-w-[16rem] shadow h-[16rem] rounded-lg gallery-photo overflow-hidden bg-cover bg-bottom bg-no-repeat relative" //cursor-pointer
 		>
