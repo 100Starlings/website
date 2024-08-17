@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
-import Snowflake from "@/public/images/snowflake.jpg";
+import Starling from "@/public/images/starling.jpeg";
 import SpecialistDescription from "@/app/components/SpecialistDescription";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import TeamCard from "@/app/components/TeamCard";
@@ -102,16 +102,16 @@ export default function Page({ params }: { params: { slug: string } }) {
 			</div>
 
 			<div
-				id="contact section"
-				className="card flex items-center sm:items-end flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
+				id="contact-section"
+				className="flex items-center flex-row flex-wrap sm:flex-nowrap max-w-4xl mx-auto sm:max-h-screen"
 			>
-				<div id="section-image" className="sm:basis-1/2 min-w-full sm:min-w-1">
-					<Image src={Snowflake} className="rounded-xl" alt="Snowflake" />
+				<div id="section-image" className="sm:basis-1/2 card">
+					<Image src={Starling} className="rounded-xl overflow-hidden" alt="Starling" />
 				</div>
 				<SpecialistDescription currentSpecialists={currentSpecialists} />
 			</div>
 
-			<div className="w-full overflow-x-visible flex flex-col gap-6">
+			<div id="expert-section" className="w-full overflow-x-visible flex flex-col gap-6">
 				<div className="flex w-full max-w-7xl mx-auto justify-between items-center">
 					<p className="text-lg lg:text-2xl">
 						Our {currentService.name.toLowerCase()} {currentSpecialists.length > 1 ? "experts" : "expert"}
