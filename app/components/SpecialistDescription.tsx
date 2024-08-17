@@ -42,8 +42,8 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 						Your business is unique
 					</h2>
 					<p className="sm:max-w-md font-light text-md leading-relaxed">
-						and that's why we tailor our approach to meet your specific needs. <br/>
-						Let's explore how our collaboration can drive the best results for you.
+						and that&apos;s why we tailor our approach to meet your specific needs. <br />
+					  Let&apos;s explore how our collaboration can drive the best results for you.
 					</p>
 				</div>
 
@@ -52,8 +52,8 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 						Your business is unique
 					</h2>
 					<p className="font-light text-2xl text-green leading-loose">
-						and that's why we tailor our approach to meet your specific needs. <br />
-						Let's explore how our collaboration can drive the best results for you.
+						and thats why we tailor our approach to meet your specific needs. <br />
+						Lets explore how our collaboration can drive the best results for you.
 					</p>
 				</div>
 			</div>

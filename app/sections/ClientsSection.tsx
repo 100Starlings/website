@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const clients = [
@@ -101,7 +102,13 @@ export default function ClientsSection() {
 								rel="noopener noreferrer"
 								className="hover:opacity-80 transition-opacity duration-300 ease-in-out w-full"
 							>
-								<img src={client.imageURL} alt={client.altText} className="lg:w-auto object-contain" />
+								<Image
+									src={client.imageURL}
+									alt={client.altText}
+									height={200}
+									width={200}
+									className="lg:w-auto object-contain"
+								/>
 							</a>
 						</div>
 					))}
