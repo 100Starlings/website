@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import services from "@/data/offeredServices.json";
 import specialists from "@/data/team.json";
 import Image from "next/image";
-import Starling from "@/public/images/starling.jpeg";
+import Starling from "@/public/images/starlings.jpeg";
 import SpecialistDescription from "@/app/components/SpecialistDescription";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import TeamCard from "@/app/components/TeamCard";
@@ -122,12 +122,12 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 			<div
 				id="contact-section"
-				className="flex items-center flex-row flex-wrap sm:flex-nowrap max-w-4xl mx-auto sm:max-h-screen"
+				className="flex items-center flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
 			>
-				<div id="section-image" className="sm:basis-1/2 card">
-					<Image src={Starling} className="rounded-xl overflow-hidden" alt="Starling" />
+				<div id="section-image" className="sm:basis-1/2">
+					<Image src={Starling} className="rounded-xl card" alt="Starling" />
 				</div>
-				<SpecialistDescription currentSpecialists={currentSpecialists} />
+				<SpecialistDescription currentSpecialists={currentSpecialists} currentService={currentService} />
 			</div>
 
 			<div id="expert-section" className="w-full overflow-x-visible flex flex-col gap-6">
