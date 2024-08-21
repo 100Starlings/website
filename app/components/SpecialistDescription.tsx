@@ -13,11 +13,16 @@ interface Specialist {
 	title: string;
 }
 
-interface SpecialistDescriptionProps {
-	currentSpecialists: Specialist[];
+interface Service {
+	name: string;
 }
 
-const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSpecialists }) => {
+interface SpecialistDescriptionProps {
+	currentSpecialists: Specialist[];
+	currentService: Service;
+}
+
+const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSpecialists, currentService }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
 	const handlePrevious = () => {
@@ -35,48 +40,40 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 	};
 
 	return (
-		<div id="specialist-section" className="sm:basis-1/2 p-6 sm:py-24 sm:px-12">
-			<div id="intro-copy">
-				<p className="header my-4">Your business is unique</p>
-
-				<p className="font-light text-justify my-4">
-					and that&apos;s why we tailor our approach to meet your specific needs. <br />
-					Let&apos;s explore how our collaboration can drive the best results for you.
-				</p>
-			</div>
-
-			<div id="specialist-profile" className="flex flex-row my-6 flex-wrap sm:flex-nowrap items-center">
-				<a
-					href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`}
-					className="sm:basis-2/12 ml-1 mr-3 mb-4 sm:mb-0"
-				>
-					<Image
-						src={currentSpecialists[currentIndex]?.image_url || ""}
-						className="rounded-full"
-						alt="Specialist"
-						width={80}
-						height={80}
-					/>
-				</a>
-
-				<div className="sm:basis-9/12">
-					<p className="text-md">
-						Connect with {currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name},{" "}
-						{currentSpecialists[currentIndex]?.title}
-					</p>
-					<p className="text-xs text-justify font-light sm:mr-2">
-						{truncateText(currentSpecialists[currentIndex]?.description || "", 250)}
-						<a
-							href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`}
-							className="text-green ml-1"
-						>
-							More info ›
-						</a>
+		<div id="specialist-section" className="lg:basis-1/2 p-8">
+			<div id="intro-card" className="relative flex flex-row">
+				<div id="intro-copy" className="mb-6">
+					<h2 className="text-5xl tracking-tight font-semibold mb-6">
+						Your business is unique
+					</h2>
+					<p className="font-light text-md">
+						and that&apos;s why we tailor our approach to meet your specific needs. <br />
+						Let&apos;s explore how our collaboration can drive the best results for you.
 					</p>
 				</div>
 			</div>
 
-			<div id="cta-button-group" className="flex flex-row mt-4">
+			<div className="flex flex-row items-center gap-x-4 mb-6">
+				<a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`}>
+					<Image
+						src={currentSpecialists[currentIndex]?.image_url || ""}
+						className="rounded-full min-w-[3rem]"
+						alt="Specialist"
+						width={60}
+						height={60}
+					/>
+				</a>
+
+				<p className="text-md font-light">
+					Talk to&nbsp;
+					<a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="text-green underline underline-offset-2">
+						{currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}
+					</a>
+					&nbsp;about your {currentService.name.toLowerCase()} goals.
+				</p>
+			</div>
+
+			<div id="cta-button-group" className="flex flex-row mb-6">
 				<a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-3">
 					Book a session
 				</a>
@@ -87,12 +84,12 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 			</div>
 
 			{currentSpecialists.length > 1 && (
-				<div id="slide-button-group" className="flex flex-row my-5 ml-1 items-center justify-left sm:justify-start">
+				<div id="slide-button-group" className="flex flex-row mt-4">
 					<button onClick={handlePrevious} aria-label="Previous specialist">
-						<ArrowLeftCircleIcon className="w-6 h-6 text-slate-400 hover:text-slate-500 mr-3" />
+						<ArrowLeftCircleIcon className="w-6 h-6 mr-3" />
 					</button>
 					<button onClick={handleNext} aria-label="Next specialist">
-						<ArrowRightCircleIcon className="w-6 h-6 text-slate-400 hover:text-slate-500" />
+						<ArrowRightCircleIcon className="w-6 h-6" />
 					</button>
 				</div>
 			)}
