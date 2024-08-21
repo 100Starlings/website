@@ -39,29 +39,16 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 		return truncated + "...";
 	};
 
-	console.log("currentSpecialists", currentSpecialists)
-	console.log("currentService", currentService)
-
 	return (
-		<div id="specialist-section" className="sm:basis-1/2 sm:ml-6 p-8">
-			<div id="intro-card" className="relative flex flex-row mb-6">
-				<div id="intro-copy" className="relative z-10">
+		<div id="specialist-section" className="lg:basis-1/2 p-8">
+			<div id="intro-card" className="relative flex flex-row">
+				<div id="intro-copy" className="mb-6">
 					<h2 className="text-5xl tracking-tight font-semibold mb-6">
 						Your business is unique
 					</h2>
-					<p className="font-light text-md leading-relaxed">
+					<p className="font-light text-md">
 						and that&apos;s why we tailor our approach to meet your specific needs. <br />
 						Let&apos;s explore how our collaboration can drive the best results for you.
-					</p>
-				</div>
-
-				<div id="blur-background" className="absolute z-0 blur-2xl">
-					<h2 className="text-4xl tracking-tight text-green font-bold">
-						Your business is unique
-					</h2>
-					<p className="font-light text-2xl text-green leading-loose">
-						and thats why we tailor our approach to meet your specific needs. <br />
-						Lets explore how our collaboration can drive the best results for you.
 					</p>
 				</div>
 			</div>

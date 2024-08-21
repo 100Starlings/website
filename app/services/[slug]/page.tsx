@@ -122,9 +122,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 
 			<div
 				id="contact-section"
-				className="card flex items-center flex-row flex-wrap sm:flex-nowrap max-w-7xl mx-auto"
+				className="card flex items-center flex-row flex-wrap lg:flex-nowrap max-w-7xl mx-auto"
 			>
-				<div id="section-image" className="sm:basis-1/2">
+				<div id="section-image" className="lg:basis-1/2">
 					<Image src={Starling} className="rounded-xl" alt="Starling" />
 				</div>
 				<SpecialistDescription currentSpecialists={currentSpecialists} currentService={currentService} />
