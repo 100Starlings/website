@@ -43,9 +43,9 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 	console.log("currentService", currentService)
 
 	return (
-		<div id="specialist-section" className="sm:basis-1/2 sm:ml-6">
-			<div id="intro-card" className="relative flex flex-row card mb-4 p-8 sm:px-8 sm:py-20">
-				<div id="intro-copy" className="relative z-10 ">
+		<div id="specialist-section" className="sm:basis-1/2 sm:ml-6 p-8">
+			<div id="intro-card" className="relative flex flex-row mb-6">
+				<div id="intro-copy" className="relative z-10">
 					<h2 className="text-5xl tracking-tight font-semibold mb-6">
 						Your business is unique
 					</h2>
@@ -66,47 +66,46 @@ const SpecialistDescription: React.FC<SpecialistDescriptionProps> = ({ currentSp
 				</div>
 			</div>
 
-			<div id="specialist-card" className="card p-8">
+			<div className="flex flex-row items-center gap-x-4 mb-6">
 				<a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`}>
 					<Image
 						src={currentSpecialists[currentIndex]?.image_url || ""}
-						className="rounded-full mb-4 min-w-[2rem]"
+						className="rounded-full min-w-[3rem]"
 						alt="Specialist"
-						width={80}
-						height={80}
+						width={60}
+						height={60}
 					/>
 				</a>
 
-				<p className="text-md font-light mb-4">
-					Connect with&nbsp;
+				<p className="text-md font-light">
+					Talk to&nbsp;
 					<a href={`/team/${currentSpecialists[currentIndex]?.first_name}-${currentSpecialists[currentIndex]?.last_name}`} className="text-green underline underline-offset-2">
-						{currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}, {currentSpecialists[currentIndex]?.title}
+						{currentSpecialists[currentIndex]?.first_name} {currentSpecialists[currentIndex]?.last_name}
 					</a>
-					<br /> 
-					to discuss the next steps in {currentService.name.toLowerCase()} for your business.
+					&nbsp;about your {currentService.name.toLowerCase()} goals.
 				</p>
-
-				<div id="cta-button-group" className="flex flex-row mt-4">
-					<a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-3">
-						Book a session
-					</a>
-
-					<a href={"/#contact"} className="button light">
-						Contact us
-					</a>
-				</div>
-
-				{currentSpecialists.length > 1 && (
-					<div id="slide-button-group" className="flex flex-row justify-end mt-4">
-						<button onClick={handlePrevious} aria-label="Previous specialist">
-							<ArrowLeftCircleIcon className="w-6 h-6 mr-3" />
-						</button>
-						<button onClick={handleNext} aria-label="Next specialist">
-							<ArrowRightCircleIcon className="w-6 h-6" />
-						</button>
-					</div>
-				)}
 			</div>
+
+			<div id="cta-button-group" className="flex flex-row mb-6">
+				<a href={currentSpecialists[currentIndex]?.calendar || "/#contact"} className="button dark mr-3">
+					Book a session
+				</a>
+
+				<a href={"/#contact"} className="button light">
+					Contact us
+				</a>
+			</div>
+
+			{currentSpecialists.length > 1 && (
+				<div id="slide-button-group" className="flex flex-row mt-4">
+					<button onClick={handlePrevious} aria-label="Previous specialist">
+						<ArrowLeftCircleIcon className="w-6 h-6 mr-3" />
+					</button>
+					<button onClick={handleNext} aria-label="Next specialist">
+						<ArrowRightCircleIcon className="w-6 h-6" />
+					</button>
+				</div>
+			)}
 		</div>
 	);
 };
