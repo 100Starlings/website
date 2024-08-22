@@ -34,18 +34,18 @@ const TestimonialSection = () => {
 						From our clients
 					</h1>
 
-					<h3 id="subtitle" className="text-slate-600 dark:text-white text-sm font-light mt-4">
+					<h3 id="subtitle" className="text-sm font-light mt-4">
 						Here&apos;s what other businesses have to say about working with us.
 					</h3>
 				</div>
 
 				<div id="testimonial-section" className="flex items-center sm:basis-2/3 py-4 sm:p-8 mb-4 sm:mb-0 min-h-[25rem]">
 					<div className={`testimonial ${isVisible ? "visible" : ""}`}>
-						<p className="mb-[1rem] text-xl dark:text-white text-slate-600 font-extralight leading-relaxed">
+						<p className="mb-[1rem] text-xl text font-extralight leading-relaxed">
 							&quot;{testimonials[current].quote}&quot;
 						</p>
 						<h3 className="font-bold text-lg">{testimonials[current].name}</h3>
-						<h4 className="text-slate-600 dark:text-white text-sm font-light mt-1">{testimonials[current].title}</h4>
+						<h4 className="text-sm font-light mt-1">{testimonials[current].title}</h4>
 					</div>
 				</div>
 			</div>

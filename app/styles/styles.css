@@ -27,7 +27,7 @@
 }
 
 .button.light {
-  @apply px-4 py-1.5 bg-transparent border-[1px] border-[var(--text-light)] text-[var(--text-light)] hover:bg-white/60 hover:text-black;
+  @apply px-4 py-1.5 bg-transparent border-[1px] border-[var(--text-light)] text-[var(--text-light)] hover:border-green hover:text-[--text-light];
 }
 
 .button.dark {
@@ -53,6 +53,7 @@
   background: var(--nav-bg);
   --tw-backdrop-blur: blur(12px);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
 .card-img-max-width {

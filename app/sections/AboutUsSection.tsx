@@ -14,17 +14,17 @@ export default function AboutUsSection() {
 
 			<div id="team-description" className="flex gap-6 flex-col w-full h-full p-8 sm:p-16 justify-center my-auto">
 				<p className="header font-extrabold">Get to know us</p>
-				<p className="text-md font-light text-slate-600 dark:text-white leading-loose">
+				<p className="text-md text font-light leading-loose">
 					Our journey began in 2015, primarily with custom Ruby on Rails development, and we have since expanded to
 					provide end-to-end digital solutions.
 				</p>
 
-				<p className="text-md font-light text-slate-600 dark:text-white leading-loose">
+				<p className="text-md text font-light leading-loose">
 					Some of our experience includes delivering mobile applications, building ETL data pipelines with Elixir and
 					AWS, conducting thorough UX/UI research and providing strategic project guidance.
 				</p>
 
-				<p className="text-md font-light text-slate-600 dark:text-white leading-loose">
+				<p className="text-md text font-light leading-loose">
 					Operating from the UK, Hungary and Brazil, we align our working hours with UK time zones. Known for our
 					reliability, we&apos;ve often served as a trusted partner within integrated teams.
 				</p>
