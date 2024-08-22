@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* Force light mode */
+html[data-theme='light'] {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,20 +17,19 @@
   --text-darker: #666666;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Force dark mode */
+html[data-theme='dark'] {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 
-    --nav-bg: rgba(8, 8, 8, 0.8);
-    --card-bg-60: rgba(8, 8, 8, 0.6);
-    --devider: rgba(255, 255, 255, 0.4);
-    --card-bg: #171717;
-    --bg-color: #080808;
-    --text-light: #f5f5f5;
-    --text-darker: #cccccc;
-  }
+  --nav-bg: rgba(8, 8, 8, 0.8);
+  --card-bg-60: rgba(8, 8, 8, 0.6);
+  --devider: rgba(255, 255, 255, 0.4);
+  --card-bg: #171717;
+  --bg-color: #080808;
+  --text-light: #f5f5f5;
+  --text-darker: #cccccc;
 }
 
 body {
