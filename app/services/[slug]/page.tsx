@@ -12,7 +12,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import TeamCard from "@/app/components/TeamCard";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
-import CaseStudySection from "@/app/components/CaseStudySection";
+import CaseStudySection from "@/app/sections/CaseStudySection";
 
 type SpecialistObject = {
 	name: string;
