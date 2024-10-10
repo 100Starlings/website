@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Starling from "@/public/images/mobile-shop.png";
+import MobileShop from "@/public/images/mobile-shop.png";
 import Link from "next/link";
 
 const CaseStudySection = () => (
@@ -7,7 +7,7 @@ const CaseStudySection = () => (
     className="card flex items-center flex-row flex-wrap lg:flex-nowrap max-w-7xl mx-auto"
   >
     <div id="section-image" className="lg:basis-1/2">
-      <Image src={Starling} className="rounded-xl" alt="Starling" />
+      <Image src={MobileShop} className="rounded-xl" alt="MobileShop" />
     </div>
 
     <div id="section-text" className="lg:basis-1/2 p-16">
@@ -54,7 +54,7 @@ const CaseStudySection = () => (
         <p className="leading-relaxed font-light text-md mb-2">
           We have upgraded the codebase, implementing Single Sign-On (SSO), adding biometric authentication, and enhancing the user experience with features like store locators, safe place pictures, live chat, push notifications, and app review prompts.
         </p>
-        <Link className="text-green" href="">
+        <Link className="text-green" href={`/case-studies/yodel-mobile`}>
           Read more →
         </Link>
       </div>
@@ -90,7 +90,7 @@ const CaseStudySection = () => (
             </div>
           </div>
         </div>
-        <Link className="text-green" href="https://www.yodel.co.uk/">
+        <Link className="text-green" href="https://www.yodel.co.uk/" target="_blank" rel="noopener noreferrer">
           Visit Yodel's website →
         </Link>
       </div>
