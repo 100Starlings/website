@@ -2,12 +2,12 @@ import Image from "next/image";
 import MobileShop from "@/public/images/mobile-shop.png";
 import Link from "next/link";
 
-const CaseStudySection = () => (
+export const YodelMobileSection = () => (
   <div
     className="card flex items-center flex-row flex-wrap lg:flex-nowrap max-w-7xl mx-auto"
   >
     <div id="section-image" className="lg:basis-1/2">
-      <Image src={MobileShop} className="rounded-xl" alt="MobileShop" />
+      <Image src={MobileShop} className="rounded-xl" alt="MobileShop" priority={true} />
     </div>
 
     <div id="section-text" className="lg:basis-1/2 p-16">
@@ -97,5 +97,3 @@ const CaseStudySection = () => (
     </div>
 	</div>
 );
-
-export default CaseStudySection;

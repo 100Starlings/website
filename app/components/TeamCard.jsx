@@ -22,7 +22,7 @@ export default function TeamCard({ id, first_name, last_name, title, description
 			key={id}
 			className="min-w-[16rem] shadow h-[16rem] rounded-lg gallery-photo overflow-hidden bg-cover bg-bottom bg-no-repeat relative" //cursor-pointer
 		>
-			<Image src={image_url} fill style={{ objectFit: "cover" }} alt={`Picture of ${first_name}`} />
+			<Image src={image_url} fill style={{ objectFit: "cover" }} alt={`Picture of ${first_name}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
 			<div
 				className={
 					showDesc
