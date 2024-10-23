@@ -1,6 +1,7 @@
 import Image from "next/image";
 import MobileShop from "@/public/images/mobile-shop.png";
 import Link from "next/link";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 export const YodelMobileSection = () => (
   <div
@@ -86,7 +87,7 @@ export const YodelMobileSection = () => (
             </div>
             <div className="flex flex-row items-center flex-nowrap text-3xl font-semibold">
               4.6
-              <Image className="mx-1" src="/icons/Star-icon.svg" width={20} height={20} alt="Star icon" />
+              <StarIcon className="mx-1" width={20} height={20} />
             </div>
           </div>
         </div>
