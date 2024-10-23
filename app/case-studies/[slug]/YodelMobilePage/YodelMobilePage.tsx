@@ -103,7 +103,7 @@ export default function YodelMobilePage() {
         </div>
 
         <div
-          className="flex flex-row flex-wrap lg:flex-nowrap mb-6"
+          className="flex flex-row flex-wrap-reverse lg:flex-nowrap mb-6"
         >
           <div id="section-text" className="lg:basis-1/2 p-8 md:p-16">
             <h2 className="text-2xl tracking-tight font-semibold my-2">
