@@ -11,7 +11,7 @@ export const YodelMobileSection = () => (
       <Image src={MobileShop} className="rounded-xl" alt="MobileShop" priority={true} />
     </div>
 
-    <div id="section-text" className="lg:basis-1/2 p-16">
+    <div id="section-text" className="lg:basis-1/2 p-8">
       <div id="capsule-group flex flex-row">
         <button 
           disabled

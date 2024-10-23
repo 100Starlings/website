@@ -18,7 +18,7 @@ export default function YodelMobilePage() {
             <Image src={MobileShop} className="rounded-xl" alt="MobileShop" />
           </div>
 
-          <div id="section-text" className="lg:basis-1/2 p-16">
+          <div id="section-text" className="lg:basis-1/2 p-8 md:p-16">
             <div id="capsule-group flex flex-row">
               <button 
                 disabled
@@ -105,7 +105,7 @@ export default function YodelMobilePage() {
         <div
           className="flex flex-row flex-wrap lg:flex-nowrap mb-6"
         >
-          <div id="section-text" className="lg:basis-1/2 p-16">
+          <div id="section-text" className="lg:basis-1/2 p-8 md:p-16">
             <h2 className="text-2xl tracking-tight font-semibold my-2">
               Implementation
             </h2>
@@ -188,7 +188,7 @@ export default function YodelMobilePage() {
           <div id="section-image" className="lg:basis-1/3 mx-auto">
             <Image src={Home} className="rounded-xl" alt="StoreLocator" />
           </div>
-          <div id="section-text" className="lg:basis-1/2 p-16">
+          <div id="section-text" className="lg:basis-1/2 p-8 md:p-16">
             <div className="flex flex-row">
               <div className="flex-col align-center m-3">
                 <p className="text-green">
