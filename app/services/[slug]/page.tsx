@@ -12,6 +12,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import TeamCard from "@/app/components/TeamCard";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
+import CaseStudySection from "@/app/sections/CaseStudySection/CaseStudySection";
 
 type SpecialistObject = {
 	name: string;
@@ -97,7 +98,13 @@ export default function Page({ params }: { params: { slug: string } }) {
 	return (
 		<div className="flex flex-col gap-[3rem] mb-[3rem] mx-[1rem] lg:mx-[2rem] pt-[3.75rem]">
 			<div className="flex relative w-full flex-col card items-center justify-center min-h-[72svh] rounded-xl overflow-hidden">
-				<Image src={currentService.imageUrl || ""} fill alt="Hero background" quality={100} className="z-[0] image" />
+				<Image 
+					src={currentService.imageUrl || ""} 
+					fill 
+					alt="Hero background" 
+					quality={100} 
+					className="z-[0] image"
+				/>
 				<div className="flex flex-col text-white items-center w-full justify-center flex-grow backdrop-blur-none bg-gradient-to-t from-black/20 via-black/50 to-black/20">
 					<h1 className="header large mb-[1rem]">{currentService.name}</h1>
 					<p className="text max-w-xl text-center px-4 lg:px-0">{currentService.description}</p>
@@ -120,12 +127,14 @@ export default function Page({ params }: { params: { slug: string } }) {
 				</ul>
 			</div>
 
+			<CaseStudySection currentService={currentService} />
+
 			<div
 				id="contact-section"
 				className="card flex items-center flex-row flex-wrap lg:flex-nowrap max-w-7xl mx-auto"
 			>
 				<div id="section-image" className="lg:basis-1/2">
-					<Image src={Starling} className="rounded-xl" alt="Starling" />
+					<Image src={Starling} className="rounded-xl grayscale" alt="Starlings" />
 				</div>
 				<SpecialistDescription currentSpecialists={currentSpecialists} currentService={currentService} />
 			</div>
