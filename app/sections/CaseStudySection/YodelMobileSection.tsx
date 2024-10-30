@@ -18,13 +18,6 @@ export const YodelMobileSection = () => (
           style={{borderStyle: 'solid', borderColor: "#03A79D", borderWidth: 1}} 
           className="rounded-full text-green text-sm mr-2 py-1 px-2"
         >
-          Case Study
-        </button>
-        <button 
-          disabled
-          style={{borderStyle: 'solid', borderColor: "#03A79D", borderWidth: 1}} 
-          className="rounded-full text-green text-sm mr-2 py-1 px-2"
-        >
           Team Extension
         </button>
         <button 
@@ -34,21 +27,26 @@ export const YodelMobileSection = () => (
         >
           Mobile
         </button>
+        <button 
+          disabled
+          style={{borderStyle: 'solid', borderColor: "#03A79D", borderWidth: 1}} 
+          className="rounded-full text-green text-sm mr-2 py-1 px-2"
+        >
+          Full Project Delivery
+        </button>
       </div>
 
-			<div className="my-10">
-        <h2 className="text-5xl tracking-tight font-semibold mb-4">
-          Feature expansion for Yodel's mobile app
-        </h2>
-        <p className="leading-relaxed font-light text-md mb-2">
-          Yodel is a leading UK logistics company, which serves over 600K users monthly through its mobile app. It allows users to track parcels, create return labels, and customize delivery preferences.
-        </p>
-        <p className="leading-relaxed font-light text-md mb-2">
-          The previous app had limited functionality, outdated code, and poor user reviews. Our goal was to add new features, improve performance and integrate user accounts, while collaborating closely with Yodel's internal teams.
-        </p>
-      </div>
+      <h2 className="text-5xl tracking-tight font-semibold my-8">
+        Our Experience with Yodel Mobile
+      </h2>
+      <p className="leading-relaxed font-light text-md mb-2">
+        Yodel is a leading UK logistics company, which serves over 600K users monthly through its mobile app. It allows users to track parcels, create return labels, and customize delivery preferences.
+      </p>
+      <p className="leading-relaxed font-light text-md mb-2">
+        The previous app had limited functionality, outdated code, and poor user reviews. Our goal was to add new features, improve performance and integrate user accounts, while collaborating closely with Yodel's internal teams.
+      </p>
 
-      <div className="my-10">
+      <div className="my-8">
         <h2 className="text-2xl tracking-tight font-semibold my-2">
           Solution
         </h2>
@@ -60,7 +58,7 @@ export const YodelMobileSection = () => (
         </Link>
       </div>
 
-      <div className="my-10">
+      <div className="my-8">
         <h2 className="text-2xl tracking-tight font-semibold my-2">
           Results
         </h2>

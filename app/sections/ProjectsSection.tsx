@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -13,32 +13,26 @@ const projects = [
 		altText: "Image of Yodel's website",
 	},
 	{
-		name: "Learn Amp",
-		websiteUrl: "https://learnamp.com/",
-		imageURL: "/images/projects/learnamp.png",
-		altText: "Image of Learnamp's website",
-	},
-	{
 		name: "Tusker",
 		websiteUrl: "https://tuskercars.com/",
 		imageURL: "/images/projects/tusker-website.png",
 		altText: "Image of Tusker's website",
 	},
 	{
-		name: "XDB CHAIN",
-		websiteUrl: "https://xdbchain.com/",
-		imageURL: "/images/projects/xdb-chain-web.png",
-		altText: "Image of XDB CHAIN's website",
-	},
-	{
-		name: "Bear",
+		name: "Bear web",
 		websiteUrl: "https://bear.app/",
 		imageURL: "/images/projects/bear-web.png",
 		altText: "Image of Bear's website",
 	},
 	{
+		name: "Learn Amp",
+		websiteUrl: "https://learnamp.com/",
+		imageURL: "/images/projects/learnamp.png",
+		altText: "Image of Learnamp's website",
+	},
+	{
 		name: "Yodel App",
-		websiteUrl: "https://www.yodel.co.uk/yodel-app",
+		websiteUrl: "/case-studies/yodel-mobile",
 		imageURL: "/images/projects/yodel-app.png",
 		altText: "Image of Yodel's App",
 	},
