@@ -7,34 +7,34 @@ import React from "react";
 
 const projects = [
 	{
-		name: "Yodel",
+		name: "Yodel Web",
 		websiteUrl: "https://www.yodel.co.uk/",
 		imageURL: "/images/projects/yodel-website.png",
 		altText: "Image of Yodel's website",
 	},
 	{
-		name: "Tusker",
+		name: "Tusker Web",
 		websiteUrl: "https://tuskercars.com/",
 		imageURL: "/images/projects/tusker-website.png",
 		altText: "Image of Tusker's website",
 	},
 	{
-		name: "Bear web",
+		name: "Bear Web",
 		websiteUrl: "https://bear.app/",
 		imageURL: "/images/projects/bear-web.png",
 		altText: "Image of Bear's website",
 	},
 	{
-		name: "Learn Amp",
-		websiteUrl: "https://learnamp.com/",
-		imageURL: "/images/projects/learnamp.png",
-		altText: "Image of Learnamp's website",
-	},
-	{
-		name: "Yodel App",
+		name: "Yodel Mobile",
 		websiteUrl: "/case-studies/yodel-mobile",
 		imageURL: "/images/projects/yodel-app.png",
 		altText: "Image of Yodel's App",
+	},
+	{
+		name: "Learn Amp Web",
+		websiteUrl: "https://learnamp.com/",
+		imageURL: "/images/projects/learnamp.png",
+		altText: "Image of Learnamp's website",
 	},
 ];
 
