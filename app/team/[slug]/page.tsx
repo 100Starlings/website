@@ -76,7 +76,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 							<h2 className="header mb-2">Bio</h2>
 							<p className="text">{currentMember?.description}</p>
 						</div>
-						{currentMember?.expertise && (
+						{/* {currentMember?.expertise && (
 							<>
 								<h2 className="header mb-2">Expertise</h2>
 								<ul className="grid grid-cols-1 divide-[--devider] divide-y-[0.5px] w-full max-w-xl">
@@ -90,7 +90,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 									)}
 								</ul>
 							</>
-						)}
+						)} */}
 					</div>
 				</div>
 			</div>
