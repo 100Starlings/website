@@ -30,12 +30,12 @@ const projects = [
 		imageURL: "/images/projects/yodel-app.png",
 		altText: "Image of Yodel's App",
 	},
-	{
-		name: "Learn Amp Web",
-		websiteUrl: "https://learnamp.com/",
-		imageURL: "/images/projects/learnamp.png",
-		altText: "Image of Learnamp's website",
-	},
+	// {
+	// 	name: "Learn Amp Web",
+	// 	websiteUrl: "https://learnamp.com/",
+	// 	imageURL: "/images/projects/learnamp.png",
+	// 	altText: "Image of Learnamp's website",
+	// },
 ];
 
 export default function ProjectsSection() {

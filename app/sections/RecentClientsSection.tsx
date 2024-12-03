@@ -23,13 +23,13 @@ const clients = [
 		altText: "Image of Bear's logo",
 		css: "w-[4rem]",
 	},
-	{
-		name: "Learn Amp",
-		websiteUrl: "https://learnamp.com/",
-		imageURL: "/images/clients/1/Learnamp.svg",
-		altText: "Image of Learnamp's logo",
-		css: "w-[9rem]",
-	},
+	// {
+	// 	name: "Learn Amp",
+	// 	websiteUrl: "https://learnamp.com/",
+	// 	imageURL: "/images/clients/1/Learnamp.svg",
+	// 	altText: "Image of Learnamp's logo",
+	// 	css: "w-[9rem]",
+	// },
 	{
 		name: "Streetbank",
 		websiteUrl: "https://www.streetbank.com/",
@@ -71,7 +71,7 @@ export default function ClientsSection() {
 	return (
 		<section className="flex flex-col w-full max-w-7xl justify-between items-start gap-[2rem]">
 			<p className="header pb-4 mx-auto">Clients we have worked with</p>
-			<div className="max-w-full flex flex-row justify-between">
+			<div className="w-full flex flex-row justify-between">
 				<div className="flex flex-row flex-wrap items-center justify-center gap-[2.5rem] w-full">
 					{clients.map((client, index) => (
 						<div className={client.css} key={index}>

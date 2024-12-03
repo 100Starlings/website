@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
 import ProjectsSection from "./sections/ProjectsSection";
